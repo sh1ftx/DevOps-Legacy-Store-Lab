@@ -1,0 +1,2015 @@
+========== INÍCIO qua 29 abr 2026 13:39:08 -03 ==========
+Sistema detectado: arch
+Limpando ambiente antigo...
+Instalando dependências (Arch)...
+:: Sincronizando a base de dados de pacotes...
+ core sendo baixado...
+ extra sendo baixado...
+ multilib sendo baixado...
+ chaotic-aur sendo baixado...
+:: Iniciando atualização completa do sistema...
+nada para fazer
+atenção: virtualbox-7.2.8-2 está atualizado -- reinstalando
+atenção: virtualbox-host-dkms-7.2.8-2 está atualizado -- reinstalando
+atenção: dkms-3.4.0-1 está atualizado -- reinstalando
+atenção: linux-headers-6.19.14.arch1-1 está atualizado -- reinstalando
+erro: alvo não encontrado: vagrant
+atenção: git-2.54.0-1 está atualizado -- reinstalando
+atenção: curl-8.19.0-1 está atualizado -- reinstalando
+Tentativa 1 falhou... tentando novamente
+atenção: virtualbox-7.2.8-2 está atualizado -- reinstalando
+atenção: virtualbox-host-dkms-7.2.8-2 está atualizado -- reinstalando
+atenção: dkms-3.4.0-1 está atualizado -- reinstalando
+atenção: linux-headers-6.19.14.arch1-1 está atualizado -- reinstalando
+erro: alvo não encontrado: vagrant
+atenção: git-2.54.0-1 está atualizado -- reinstalando
+atenção: curl-8.19.0-1 está atualizado -- reinstalando
+Tentativa 2 falhou... tentando novamente
+atenção: virtualbox-7.2.8-2 está atualizado -- reinstalando
+atenção: virtualbox-host-dkms-7.2.8-2 está atualizado -- reinstalando
+atenção: dkms-3.4.0-1 está atualizado -- reinstalando
+atenção: linux-headers-6.19.14.arch1-1 está atualizado -- reinstalando
+erro: alvo não encontrado: vagrant
+atenção: git-2.54.0-1 está atualizado -- reinstalando
+atenção: curl-8.19.0-1 está atualizado -- reinstalando
+Tentativa 3 falhou... tentando novamente
+❌ Falhou após 3 tentativas
+========== INÍCIO qua 29 abr 2026 13:41:15 -03 ==========
+
+[INFO] Sistema detectado: arch
+
+[INFO] Instalando base Arch...
+:: Sincronizando a base de dados de pacotes...
+ core sendo baixado...
+ extra sendo baixado...
+ multilib sendo baixado...
+ chaotic-aur sendo baixado...
+:: Iniciando atualização completa do sistema...
+nada para fazer
+atenção: git-2.54.0-1 está atualizado -- reinstalando
+atenção: curl-8.19.0-1 está atualizado -- reinstalando
+atenção: dkms-3.4.0-1 está atualizado -- reinstalando
+atenção: linux-headers-6.19.14.arch1-1 está atualizado -- reinstalando
+atenção: virtualbox-7.2.8-2 está atualizado -- reinstalando
+atenção: virtualbox-host-dkms-7.2.8-2 está atualizado -- reinstalando
+resolvendo dependências...
+procurando pacotes conflitantes...
+
+Pacote (6)                  Versão antiga    Versão nova        Diferença
+
+core/curl                   8.19.0-1         8.19.0-1            0,00 MiB
+extra/dkms                  3.4.0-1          3.4.0-1             0,00 MiB
+extra/git                   2.54.0-1         2.54.0-1            0,00 MiB
+core/linux-headers          6.19.14.arch1-1  6.19.14.arch1-1     0,00 MiB
+extra/virtualbox            7.2.8-2          7.2.8-2             0,00 MiB
+extra/virtualbox-host-dkms  7.2.8-2          7.2.8-2             0,00 MiB
+
+Tamanho total instalado:  532,55 MiB
+Alteração no tamanho:       0,00 MiB
+
+:: Continuar a instalação? [S/n] 
+verificando chaveiro...
+verificando integridade de pacotes...
+carregando arquivos do pacote...
+verificando conflitos de arquivos...
+verificando espaço em disco disponível...
+:: Executando hooks pré-transação...
+(1/1) Remove upgraded DKMS modules
+==> dkms remove --no-depmod vboxhost/7.2.8_OSE -k 6.19.14-arch1-1
+==> dkms remove --no-depmod vboxhost/7.2.8_OSE -k 6.19.14-zen1-1-zen
+==> dkms remove --no-depmod v4l2loopback/0.15.3 -k 6.19.14-arch1-1
+:: Processando alterações do pacote...
+reinstalando curl...
+reinstalando git...
+reinstalando dkms...
+reinstalando linux-headers...
+reinstalando virtualbox-host-dkms...
+reinstalando virtualbox...
+:: Executando hooks pós-transação...
+( 1/11) Creating system user accounts...
+( 2/11) Reloading system manager configuration...
+( 3/11) Updating the MIME type database...
+( 4/11) Enqueuing marked services...
+( 5/11) Reloading device manager configuration...
+( 6/11) Arming ConditionNeedsUpdate...
+( 7/11) Updating module dependencies...
+( 8/11) Install DKMS modules
+==> dkms install --no-depmod v4l2loopback/0.15.3 -k 6.19.14-arch1-1
+==> dkms install --no-depmod vboxhost/7.2.8_OSE -k 6.19.14-zen1-1-zen
+==> dkms install --no-depmod vboxhost/7.2.8_OSE -k 6.19.14-arch1-1
+==> depmod 6.19.14-arch1-1
+==> depmod 6.19.14-zen1-1-zen
+( 9/11) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img
+==> Starting build: '6.19.14-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [block]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux-zen.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux-zen -g /boot/initramfs-linux-zen.img
+==> Starting build: '6.19.14-zen1-1-zen'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [block]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-zen.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+(10/11) Updating icon theme caches...
+(11/11) Updating the desktop file MIME type cache...
+
+[INFO] Subindo VM...
+Bringing machine 'db' up with 'virtualbox' provider...
+==> db: Importing base box 'hashicorp/precise32'...
+[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> db: Matching MAC address for NAT networking...
+==> db: Checking if box 'hashicorp/precise32' version '1.0.0' is up to date...
+==> db: Setting the name of the VM: loja-virtual-devops_db_1777480961535_68780
+==> db: Fixed port collision for 22 => 2222. Now on port 2200.
+==> db: Clearing any previously set network interfaces...
+==> db: Preparing network interfaces based on configuration...
+    db: Adapter 1: nat
+    db: Adapter 2: hostonly
+==> db: Forwarding ports...
+    db: 22 (guest) => 2200 (host) (adapter 1)
+==> db: Booting VM...
+==> db: Waiting for machine to boot. This may take a few minutes...
+    db: SSH address: 127.0.0.1:2200
+    db: SSH username: vagrant
+    db: SSH auth method: private key
+    db: 
+    db: Vagrant insecure key detected. Vagrant will automatically replace
+    db: this with a newly generated keypair for better security.
+    db: 
+    db: Inserting generated public key within guest...
+    db: Removing insecure key from the guest if it's present...
+    db: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> db: Machine booted and ready!
+==> db: Checking for guest additions in VM...
+    db: The guest additions on this VM do not match the installed version of
+    db: VirtualBox! In most cases this is fine, but in rare cases it can
+    db: prevent things such as shared folders from working properly. If you see
+    db: shared folder errors, please make sure the guest additions within the
+    db: virtual machine match the version of VirtualBox you have installed on
+    db: your host and reload your VM.
+    db: 
+    db: Guest Additions Version: 5.2.12
+    db: VirtualBox Version: 7.2
+==> db: Configuring and enabling network interfaces...
+==> db: Mounting shared folders...
+    db: /home/sh1ft/Documentos/DevOps Legacy Store Lab/loja-virtual-devops => /vagrant
+==> db: Running provisioner: shell...
+    db: Running: inline script
+    db: Err http://us.old-releases.ubuntu.com precise Release.gpg
+    db:   Could not resolve 'us.old-releases.ubuntu.com'
+    db: Err http://us.old-releases.ubuntu.com precise-updates Release.gpg
+    db:   Could not resolve 'us.old-releases.ubuntu.com'
+    db: Err http://us.old-releases.ubuntu.com precise-backports Release.gpg
+    db:   Could not resolve 'us.old-releases.ubuntu.com'
+    db: Get:1 http://old-releases.ubuntu.com precise-security Release.gpg [181 B]
+    db: Get:2 http://old-releases.ubuntu.com precise-security Release [55.5 kB]
+    db: Get:3 http://old-releases.ubuntu.com precise-security/main Sources [242 kB]
+    db: Get:4 http://old-releases.ubuntu.com precise-security/restricted Sources [6,945 B]
+    db: Get:5 http://old-releases.ubuntu.com precise-security/universe Sources [88.1 kB]
+    db: Get:6 http://old-releases.ubuntu.com precise-security/multiverse Sources [4,169 B]
+    db: Get:7 http://old-releases.ubuntu.com precise-security/main i386 Packages [589 kB]
+    db: Get:8 http://old-releases.ubuntu.com precise-security/restricted i386 Packages [14.0 kB]
+    db: Get:9 http://old-releases.ubuntu.com precise-security/universe i386 Packages [228 kB]
+    db: Get:10 http://old-releases.ubuntu.com precise-security/multiverse i386 Packages [4,339 B]
+    db: Get:11 http://old-releases.ubuntu.com precise-security/main TranslationIndex [208 B]
+    db: Get:12 http://old-releases.ubuntu.com precise-security/multiverse TranslationIndex [199 B]
+    db: Get:13 http://old-releases.ubuntu.com precise-security/restricted TranslationIndex [202 B]
+    db: Get:14 http://old-releases.ubuntu.com precise-security/universe TranslationIndex [205 B]
+    db: Get:15 http://old-releases.ubuntu.com precise-security/main Translation-en [202 kB]
+    db: Get:16 http://old-releases.ubuntu.com precise-security/multiverse Translation-en [1,993 B]
+    db: Get:17 http://old-releases.ubuntu.com precise-security/restricted Translation-en [2,802 B]
+    db: Get:18 http://old-releases.ubuntu.com precise-security/universe Translation-en [96.4 kB]
+    db: Fetched 1,536 kB in 3s (471 kB/s)
+    db: Reading package lists...
+    db: W: Failed to fetch http://us.old-releases.ubuntu.com/ubuntu/dists/precise/Release.gpg  Could not resolve 'us.old-releases.ubuntu.com'
+    db: 
+    db: W: Failed to fetch http://us.old-releases.ubuntu.com/ubuntu/dists/precise-updates/Release.gpg  Could not resolve 'us.old-releases.ubuntu.com'
+    db: 
+    db: W: Failed to fetch http://us.old-releases.ubuntu.com/ubuntu/dists/precise-backports/Release.gpg  Could not resolve 'us.old-releases.ubuntu.com'
+    db: 
+    db: W: Some index files failed to download. They have been ignored, or old ones used instead.
+    db: Reading package lists...
+    db: Building dependency tree...
+    db: Reading state information...
+    db: E: Unable to locate package openjdk-8-jdk
+    db: E: Unable to locate package maven
+    db: sed: can't read /etc/mysql/my.cnf: No such file or directory
+    db: mysql: unrecognized service
+    db: /tmp/vagrant-shell: line 16: mysql: command not found
+    db: /tmp/vagrant-shell: line 17: mysql: command not found
+    db: /tmp/vagrant-shell: line 18: mysql: command not found
+    db: /tmp/vagrant-shell: line 19: mysql: command not found
+    db: /tmp/vagrant-shell: line 22: git: command not found
+    db: /tmp/vagrant-shell: line 23: cd: loja-virtual-devops: No such file or directory
+    db: /tmp/vagrant-shell: line 25: mvn: command not found
+    db: cp: cannot stat `target/*.war': No such file or directory
+    db: tomcat7: unrecognized service
+The SSH command responded with a non-zero exit status. Vagrant
+assumes that this means the command failed. The output for this command
+should be in the log above. Please read the output to determine what
+went wrong.
+
+[WARN] Tentativa 1 falhou. Repetindo...
+Bringing machine 'db' up with 'virtualbox' provider...
+==> db: Checking if box 'hashicorp/precise32' version '1.0.0' is up to date...
+==> db: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> db: flag to force provisioning. Provisioners marked to run always will still run.
+
+[INFO] Testando banco...
+mariadb: unknown variable 'ssl-mode=DISABLED'
+
+[WARN] Tentativa 1 falhou. Repetindo...
+mariadb: unknown variable 'ssl-mode=DISABLED'
+
+[WARN] Tentativa 2 falhou. Repetindo...
+mariadb: unknown variable 'ssl-mode=DISABLED'
+
+[WARN] Banco não respondeu
+
+[INFO] Testando web...
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0
+curl: (7) Failed to connect to 192.168.56.10 port 8080 after 1 ms: Could not connect to server
+
+[WARN] Tentativa 1 falhou. Repetindo...
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0
+curl: (7) Failed to connect to 192.168.56.10 port 8080 after 0 ms: Could not connect to server
+
+[WARN] Tentativa 2 falhou. Repetindo...
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0
+curl: (7) Failed to connect to 192.168.56.10 port 8080 after 1 ms: Could not connect to server
+
+[WARN] Tentativa 3 falhou. Repetindo...
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0
+curl: (7) Failed to connect to 192.168.56.10 port 8080 after 0 ms: Could not connect to server
+
+[WARN] Tentativa 4 falhou. Repetindo...
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0
+curl: (7) Failed to connect to 192.168.56.10 port 8080 after 0 ms: Could not connect to server
+
+[WARN] Web falhou → fallback Docker
+
+[INFO] Instalando Docker fallback...
+atenção: docker-1:29.4.1-1 está atualizado -- reinstalando
+resolvendo dependências...
+procurando pacotes conflitantes...
+
+Pacote (2)            Versão antiga  Versão nova    Diferença  Tamanho do download
+
+extra/docker          1:29.4.1-1     1:29.4.1-1      0,00 MiB                     
+extra/docker-compose                 5.1.3-1        28,21 MiB             8,07 MiB
+
+Tamanho total download:     8,07 MiB
+Tamanho total instalado:  140,42 MiB
+Alteração no tamanho:      28,21 MiB
+
+:: Continuar a instalação? [S/n] 
+:: Obtendo pacotes...
+ docker-compose-5.1.3-1-x86_64 sendo baixado...
+verificando chaveiro...
+verificando integridade de pacotes...
+carregando arquivos do pacote...
+verificando conflitos de arquivos...
+verificando espaço em disco disponível...
+:: Processando alterações do pacote...
+reinstalando docker...
+instalando docker-compose...
+:: Executando hooks pós-transação...
+(1/4) Creating system user accounts...
+(2/4) Reloading system manager configuration...
+(3/4) Enqueuing marked services...
+(4/4) Arming ConditionNeedsUpdate...
+Created symlink '/etc/systemd/system/multi-user.target.wants/docker.service' → '/usr/lib/systemd/system/docker.service'.
+
+[INFO] Executando fallback Docker...
+time="2026-04-29T13:44:13-03:00" level=warning msg="/home/sh1ft/Documentos/DevOps Legacy Store Lab/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+unable to get image 'tomcat:8': permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+========== INÍCIO qua 29 abr 2026 13:46:43 -03 ==========
+
+[INFO] Sistema: arch
+:: Sincronizando a base de dados de pacotes...
+ core sendo baixado...
+ extra sendo baixado...
+ multilib sendo baixado...
+ chaotic-aur sendo baixado...
+:: Iniciando atualização completa do sistema...
+nada para fazer
+atenção: git-2.54.0-1 está atualizado -- reinstalando
+atenção: curl-8.19.0-1 está atualizado -- reinstalando
+atenção: dkms-3.4.0-1 está atualizado -- reinstalando
+atenção: linux-headers-6.19.14.arch1-1 está atualizado -- reinstalando
+atenção: virtualbox-7.2.8-2 está atualizado -- reinstalando
+atenção: virtualbox-host-dkms-7.2.8-2 está atualizado -- reinstalando
+resolvendo dependências...
+procurando pacotes conflitantes...
+
+Pacote (6)                  Versão antiga    Versão nova        Diferença
+
+core/curl                   8.19.0-1         8.19.0-1            0,00 MiB
+extra/dkms                  3.4.0-1          3.4.0-1             0,00 MiB
+extra/git                   2.54.0-1         2.54.0-1            0,00 MiB
+core/linux-headers          6.19.14.arch1-1  6.19.14.arch1-1     0,00 MiB
+extra/virtualbox            7.2.8-2          7.2.8-2             0,00 MiB
+extra/virtualbox-host-dkms  7.2.8-2          7.2.8-2             0,00 MiB
+
+Tamanho total instalado:  532,55 MiB
+Alteração no tamanho:       0,00 MiB
+
+:: Continuar a instalação? [S/n] 
+verificando chaveiro...
+verificando integridade de pacotes...
+carregando arquivos do pacote...
+verificando conflitos de arquivos...
+verificando espaço em disco disponível...
+:: Executando hooks pré-transação...
+(1/1) Remove upgraded DKMS modules
+==> dkms remove --no-depmod vboxhost/7.2.8_OSE -k 6.19.14-arch1-1
+==> dkms remove --no-depmod vboxhost/7.2.8_OSE -k 6.19.14-zen1-1-zen
+==> dkms remove --no-depmod v4l2loopback/0.15.3 -k 6.19.14-arch1-1
+:: Processando alterações do pacote...
+reinstalando curl...
+reinstalando git...
+reinstalando dkms...
+reinstalando linux-headers...
+reinstalando virtualbox-host-dkms...
+reinstalando virtualbox...
+:: Executando hooks pós-transação...
+( 1/11) Creating system user accounts...
+( 2/11) Reloading system manager configuration...
+( 3/11) Updating the MIME type database...
+( 4/11) Enqueuing marked services...
+( 5/11) Reloading device manager configuration...
+( 6/11) Arming ConditionNeedsUpdate...
+( 7/11) Updating module dependencies...
+( 8/11) Install DKMS modules
+==> dkms install --no-depmod v4l2loopback/0.15.3 -k 6.19.14-arch1-1
+==> dkms install --no-depmod vboxhost/7.2.8_OSE -k 6.19.14-zen1-1-zen
+==> dkms install --no-depmod vboxhost/7.2.8_OSE -k 6.19.14-arch1-1
+==> depmod 6.19.14-arch1-1
+==> depmod 6.19.14-zen1-1-zen
+( 9/11) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img
+==> Starting build: '6.19.14-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [block]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux-zen.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux-zen -g /boot/initramfs-linux-zen.img
+==> Starting build: '6.19.14-zen1-1-zen'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [block]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-zen.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+(10/11) Updating icon theme caches...
+(11/11) Updating the desktop file MIME type cache...
+
+[INFO] Subindo VM...
+Bringing machine 'app' up with 'virtualbox' provider...
+==> app: Box 'ubuntu/bionic64' could not be found. Attempting to find and install...
+    app: Box Provider: virtualbox
+    app: Box Version: >= 0
+==> app: Loading metadata for box 'ubuntu/bionic64'
+    app: URL: https://vagrantcloud.com/api/v2/vagrant/ubuntu/bionic64
+==> app: Adding box 'ubuntu/bionic64' (v20230607.0.5) for provider: virtualbox
+    app: Downloading: https://vagrantcloud.com/ubuntu/boxes/bionic64/versions/20230607.0.5/providers/virtualbox/unknown/vagrant.box
+[KProgress: 0% (Rate: was/s, Estimated time remaining: vagrantcloud.com:443)[KProgress: 0% (Rate: OPENED/s, Estimated time remaining: [3])[KProgress: 100% (Rate: #0/s, Estimated time remaining: Connection)[KProgress: 0% (Rate: was/s, Estimated time remaining: cloud-images.ubuntu.com:443)[KProgress: 0% (Rate: 10h/s, Estimated time remaining: 00:01)[KProgress: 0% (Rate: 638.4k/s, Estimated time remaining: 12:35)[KProgress: 2% (Rate: 2.79M/s, Estimated time remaining: 02:28)[KProgress: 7% (Rate: 5.59M/s, Estimated time remaining: 01:07)[KProgress: 8% (Rate: 5.56M/s, Estimated time remaining: 01:05)[KProgress: 14% (Rate: 8.87M/s, Estimated time remaining: 00:44)[KProgress: 15% (Rate: 9.01M/s, Estimated time remaining: 00:48)[KProgress: 20% (Rate: 10.42M/s, Estimated time remaining: 00:39)[KProgress: 21% (Rate: 8.16M/s, Estimated time remaining: 00:42)[KProgress: 22% (Rate: 7.85M/s, Estimated time remaining: 00:43)[KProgress: 23% (Rate: 5.17M/s, Estimated time remaining: 00:45)[KProgress: 24% (Rate: 4.86M/s, Estimated time remaining: 00:47)[KProgress: 25% (Rate: 2.69M/s, Estimated time remaining: 00:49)[KProgress: 27% (Rate: 3.28M/s, Estimated time remaining: 00:47)[KProgress: 30% (Rate: 4.48M/s, Estimated time remaining: 00:43)[KProgress: 30% (Rate: 4.00M/s, Estimated time remaining: 00:45)[KProgress: 30% (Rate: 3.77M/s, Estimated time remaining: 00:47)[KProgress: 31% (Rate: 3.61M/s, Estimated time remaining: 00:49)[KProgress: 34% (Rate: 4.84M/s, Estimated time remaining: 00:44)[KProgress: 37% (Rate: 4.06M/s, Estimated time remaining: 00:42)[KProgress: 40% (Rate: 6.15M/s, Estimated time remaining: 00:38)[KProgress: 43% (Rate: 8.06M/s, Estimated time remaining: 00:35)[KProgress: 46% (Rate: 9.82M/s, Estimated time remaining: 00:32)[KProgress: 47% (Rate: 7.93M/s, Estimated time remaining: 00:33)[KProgress: 51% (Rate: 9.26M/s, Estimated time remaining: 00:28)[KProgress: 57% (Rate: 10.74M/s, Estimated time remaining: 00:23)[KProgress: 61% (Rate: 11.16M/s, Estimated time remaining: 00:21)[KProgress: 65% (Rate: 11.05M/s, Estimated time remaining: 00:18)[KProgress: 71% (Rate: 14.57M/s, Estimated time remaining: 00:14)[KProgress: 75% (Rate: 14.44M/s, Estimated time remaining: 00:11)[KProgress: 81% (Rate: 14.80M/s, Estimated time remaining: 00:08)[KProgress: 82% (Rate: 12.73M/s, Estimated time remaining: 00:08)[KProgress: 87% (Rate: 13.93M/s, Estimated time remaining: 00:06)[KProgress: 94% (Rate: 14.07M/s, Estimated time remaining: 00:03)[KProgress: 100% (Rate: /s, Estimated time remaining: 15.66M)[KProgress: 100% (Rate: /s, Estimated time remaining: 15.66M)[K==> app: Successfully added box 'ubuntu/bionic64' (v20230607.0.5) for 'virtualbox'!
+==> app: Importing base box 'ubuntu/bionic64'...
+[KProgress: 90%[K==> app: Matching MAC address for NAT networking...
+==> app: Checking if box 'ubuntu/bionic64' version '20230607.0.5' is up to date...
+==> app: Setting the name of the VM: loja-virtual-devops_app_1777481328061_29597
+==> app: Fixed port collision for 22 => 2222. Now on port 2201.
+==> app: Clearing any previously set network interfaces...
+==> app: Preparing network interfaces based on configuration...
+    app: Adapter 1: nat
+    app: Adapter 2: hostonly
+==> app: Forwarding ports...
+    app: 22 (guest) => 2201 (host) (adapter 1)
+==> app: Running 'pre-boot' VM customizations...
+==> app: Booting VM...
+==> app: Waiting for machine to boot. This may take a few minutes...
+    app: SSH address: 127.0.0.1:2201
+    app: SSH username: vagrant
+    app: SSH auth method: private key
+    app: Warning: Connection reset. Retrying...
+    app: Warning: Remote connection disconnect. Retrying...
+    app: 
+    app: Vagrant insecure key detected. Vagrant will automatically replace
+    app: this with a newly generated keypair for better security.
+    app: 
+    app: Inserting generated public key within guest...
+    app: Removing insecure key from the guest if it's present...
+    app: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> app: Machine booted and ready!
+==> app: Checking for guest additions in VM...
+    app: The guest additions on this VM do not match the installed version of
+    app: VirtualBox! In most cases this is fine, but in rare cases it can
+    app: prevent things such as shared folders from working properly. If you see
+    app: shared folder errors, please make sure the guest additions within the
+    app: virtual machine match the version of VirtualBox you have installed on
+    app: your host and reload your VM.
+    app: 
+    app: Guest Additions Version: 5.2.42
+    app: VirtualBox Version: 7.2
+==> app: Configuring and enabling network interfaces...
+==> app: Mounting shared folders...
+    app: /home/sh1ft/Documentos/DevOps Legacy Store Lab/loja-virtual-devops => /vagrant
+==> app: Running provisioner: shell...
+    app: Running: inline script
+    app: Hit:1 http://archive.ubuntu.com/ubuntu bionic InRelease
+    app: Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [102 kB]
+    app: Get:3 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [102 kB]
+    app: Get:4 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2762 kB]
+    app: Get:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [102 kB]
+    app: Get:6 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB]
+    app: Get:7 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [467 kB]
+    app: Get:8 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [1338 kB]
+    app: Get:9 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [182 kB]
+    app: Get:10 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1319 kB]
+    app: Get:11 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [307 kB]
+    app: Get:12 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [19.8 kB]
+    app: Get:13 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [3896 B]
+    app: Get:14 http://archive.ubuntu.com/ubuntu bionic/universe Translation-en [4941 kB]
+    app: Get:15 http://archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+    app: Get:16 http://archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB]
+    app: Get:17 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [3093 kB]
+    app: Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [552 kB]
+    app: Get:19 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [1368 kB]
+    app: Get:20 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [187 kB]
+    app: Get:21 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1936 kB]
+    app: Get:22 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [420 kB]
+    app: Get:23 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [25.7 kB]
+    app: Get:24 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6056 B]
+    app: Get:25 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [53.7 kB]
+    app: Get:26 http://archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [14.5 kB]
+    app: Get:27 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [18.3 kB]
+    app: Get:28 http://archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [8612 B]
+    app: Fetched 28.2 MB in 9s (3270 kB/s)
+    app: Reading package lists...
+    app: Reading package lists...
+    app: Building dependency tree...
+    app: Reading state information...
+    app: curl is already the newest version (7.58.0-2ubuntu3.24).
+    app: curl set to manually installed.
+    app: git is already the newest version (1:2.17.1-1ubuntu0.18).
+    app: git set to manually installed.
+    app: The following additional packages will be installed:
+    app:   adwaita-icon-theme at-spi2-core ca-certificates-java default-jre-headless
+    app:   fontconfig fontconfig-config fonts-dejavu-core fonts-dejavu-extra
+    app:   gtk-update-icon-cache hicolor-icon-theme humanity-icon-theme java-common
+    app:   libaio1 libaopalliance-java libapache-pom-java libapr1 libasound2
+    app:   libasound2-data libasyncns0 libatinject-jsr330-api-java libatk-bridge2.0-0
+    app:   libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0 libatk1.0-data
+    app:   libatspi2.0-0 libavahi-client3 libavahi-common-data libavahi-common3
+    app:   libcairo2 libcdi-api-java libcgi-fast-perl libcgi-pm-perl
+    app:   libcommons-cli-java libcommons-io-java libcommons-lang3-java
+    app:   libcommons-parent-java libcroco3 libcups2 libdatrie1 libdrm-amdgpu1
+    app:   libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libeclipse-jdt-core-java
+    app:   libencode-locale-perl libevent-core-2.1-6 libfcgi-perl libflac8
+    app:   libfontconfig1 libfontenc1 libgail-common libgail18 libgdk-pixbuf2.0-0
+    app:   libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common
+    app:   libgeronimo-annotation-1.3-spec-java libgeronimo-interceptor-3.0-spec-java
+    app:   libgif7 libgl1 libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libglvnd0
+    app:   libglx-mesa0 libglx0 libgraphite2-3 libgtk2.0-0 libgtk2.0-bin
+    app:   libgtk2.0-common libguava-java libguice-java libharfbuzz0b
+    app:   libhawtjni-runtime-java libhtml-parser-perl libhtml-tagset-perl
+    app:   libhtml-template-perl libhttp-date-perl libhttp-message-perl libice-dev
+    app:   libice6 libio-html-perl libjansi-java libjansi-native-java libjbig0
+    app:   libjpeg-turbo8 libjpeg8 libjsr305-java liblcms2-2 libllvm10
+    app:   liblwp-mediatypes-perl libmaven-parent-java libmaven-resolver-java
+    app:   libmaven-shared-utils-java libmaven3-core-java libnspr4 libnss3 libogg0
+    app:   libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+    app:   libpcsclite1 libpixman-1-0 libplexus-cipher-java libplexus-classworlds-java
+    app:   libplexus-component-annotations-java libplexus-interpolation-java
+    app:   libplexus-sec-dispatcher-java libplexus-utils2-java libpthread-stubs0-dev
+    app:   libpulse0 librsvg2-2 librsvg2-common libsensors4 libsisu-inject-java
+    app:   libsisu-plexus-java libslf4j-java libsm-dev libsm6 libsndfile1 libtcnative-1
+    app:   libthai-data libthai0 libtiff5 libtimedate-perl libtomcat9-java liburi-perl
+    app:   libvorbis0a libvorbisenc2 libwagon-file-java libwagon-http-shaded-java
+    app:   libwagon-provider-api-java libx11-dev libx11-doc libx11-xcb1 libxau-dev
+    app:   libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+    app:   libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb1-dev
+    app:   libxcomposite1 libxcursor1 libxdamage1 libxdmcp-dev libxfixes3 libxft2
+    app:   libxi6 libxinerama1 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1
+    app:   libxt-dev libxt6 libxtst6 libxv1 libxxf86dga1 libxxf86vm1 mysql-client-5.7
+    app:   mysql-client-core-5.7 mysql-common mysql-server-5.7 mysql-server-core-5.7
+    app:   openjdk-11-jre-headless openjdk-8-jdk-headless openjdk-8-jre
+    app:   openjdk-8-jre-headless tomcat9-common ubuntu-mono x11-common x11-utils
+    app:   x11proto-core-dev x11proto-dev xorg-sgml-doctools xtrans-dev
+    app: Suggested packages:
+    app:   default-jre libaopalliance-java-doc libasound2-plugins alsa-utils
+    app:   libatinject-jsr330-api-java-doc libservlet3.1-java libcommons-io-java-doc
+    app:   libcommons-lang3-java-doc cups-common gvfs libasm-java libcglib-java
+    app:   libdata-dump-perl libipc-sharedcache-perl libice-doc libjsr305-java-doc
+    app:   liblcms2-utils libmaven-shared-utils-java-doc liblogback-java pcscd
+    app:   libplexus-cipher-java-doc libplexus-classworlds-java-doc
+    app:   libplexus-interpolation-java-doc libplexus-sec-dispatcher-java-doc
+    app:   libplexus-utils2-java-doc pulseaudio librsvg2-bin lm-sensors junit4 testng
+    app:   libcommons-logging-java liblog4j1.2-java libsm-doc libwww-perl libxcb-doc
+    app:   libxt-doc mailx tinyca libnss-mdns fonts-ipafont-gothic fonts-ipafont-mincho
+    app:   fonts-wqy-microhei | fonts-wqy-zenhei fonts-indic openjdk-8-demo
+    app:   openjdk-8-source visualvm fonts-wqy-microhei fonts-wqy-zenhei tomcat9-admin
+    app:   tomcat9-docs tomcat9-examples tomcat9-user mesa-utils
+    app: The following NEW packages will be installed:
+    app:   adwaita-icon-theme at-spi2-core ca-certificates-java default-jre-headless
+    app:   fontconfig fontconfig-config fonts-dejavu-core fonts-dejavu-extra
+    app:   gtk-update-icon-cache hicolor-icon-theme humanity-icon-theme java-common
+    app:   libaio1 libaopalliance-java libapache-pom-java libapr1 libasound2
+    app:   libasound2-data libasyncns0 libatinject-jsr330-api-java libatk-bridge2.0-0
+    app:   libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0 libatk1.0-data
+    app:   libatspi2.0-0 libavahi-client3 libavahi-common-data libavahi-common3
+    app:   libcairo2 libcdi-api-java libcgi-fast-perl libcgi-pm-perl
+    app:   libcommons-cli-java libcommons-io-java libcommons-lang3-java
+    app:   libcommons-parent-java libcroco3 libcups2 libdatrie1 libdrm-amdgpu1
+    app:   libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libeclipse-jdt-core-java
+    app:   libencode-locale-perl libevent-core-2.1-6 libfcgi-perl libflac8
+    app:   libfontconfig1 libfontenc1 libgail-common libgail18 libgdk-pixbuf2.0-0
+    app:   libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common
+    app:   libgeronimo-annotation-1.3-spec-java libgeronimo-interceptor-3.0-spec-java
+    app:   libgif7 libgl1 libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libglvnd0
+    app:   libglx-mesa0 libglx0 libgraphite2-3 libgtk2.0-0 libgtk2.0-bin
+    app:   libgtk2.0-common libguava-java libguice-java libharfbuzz0b
+    app:   libhawtjni-runtime-java libhtml-parser-perl libhtml-tagset-perl
+    app:   libhtml-template-perl libhttp-date-perl libhttp-message-perl libice-dev
+    app:   libice6 libio-html-perl libjansi-java libjansi-native-java libjbig0
+    app:   libjpeg-turbo8 libjpeg8 libjsr305-java liblcms2-2 libllvm10
+    app:   liblwp-mediatypes-perl libmaven-parent-java libmaven-resolver-java
+    app:   libmaven-shared-utils-java libmaven3-core-java libnspr4 libnss3 libogg0
+    app:   libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+    app:   libpcsclite1 libpixman-1-0 libplexus-cipher-java libplexus-classworlds-java
+    app:   libplexus-component-annotations-java libplexus-interpolation-java
+    app:   libplexus-sec-dispatcher-java libplexus-utils2-java libpthread-stubs0-dev
+    app:   libpulse0 librsvg2-2 librsvg2-common libsensors4 libsisu-inject-java
+    app:   libsisu-plexus-java libslf4j-java libsm-dev libsm6 libsndfile1 libtcnative-1
+    app:   libthai-data libthai0 libtiff5 libtimedate-perl libtomcat9-java liburi-perl
+    app:   libvorbis0a libvorbisenc2 libwagon-file-java libwagon-http-shaded-java
+    app:   libwagon-provider-api-java libx11-dev libx11-doc libx11-xcb1 libxau-dev
+    app:   libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+    app:   libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb1-dev
+    app:   libxcomposite1 libxcursor1 libxdamage1 libxdmcp-dev libxfixes3 libxft2
+    app:   libxi6 libxinerama1 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1
+    app:   libxt-dev libxt6 libxtst6 libxv1 libxxf86dga1 libxxf86vm1 maven
+    app:   mysql-client-5.7 mysql-client-core-5.7 mysql-common mysql-server
+    app:   mysql-server-5.7 mysql-server-core-5.7 openjdk-11-jre-headless openjdk-8-jdk
+    app:   openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless tomcat9
+    app:   tomcat9-common ubuntu-mono x11-common x11-utils x11proto-core-dev
+    app:   x11proto-dev xorg-sgml-doctools xtrans-dev
+    app: 0 upgraded, 187 newly installed, 0 to remove and 17 not upgraded.
+    app: Need to get 165 MB of archives.
+    app: After this operation, 924 MB of additional disk space will be used.
+    app: Get:1 http://archive.ubuntu.com/ubuntu bionic/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB]
+    app: Get:2 http://archive.ubuntu.com/ubuntu bionic/main amd64 fontconfig-config all 2.12.6-0ubuntu2 [55.8 kB]
+    app: Get:3 http://archive.ubuntu.com/ubuntu bionic/main amd64 libfontconfig1 amd64 2.12.6-0ubuntu2 [137 kB]
+    app: Get:4 http://archive.ubuntu.com/ubuntu bionic/main amd64 fontconfig amd64 2.12.6-0ubuntu2 [169 kB]
+    app: Get:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libjpeg-turbo8 amd64 1.5.2-0ubuntu5.18.04.6 [111 kB]
+    app: Get:6 http://archive.ubuntu.com/ubuntu bionic/main amd64 libogg0 amd64 1.3.2-1 [17.2 kB]
+    app: Get:7 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 x11-common all 1:7.7+19ubuntu7.1 [22.5 kB]
+    app: Get:8 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libice6 amd64 2:1.0.9-2ubuntu0.18.04.1 [40.7 kB]
+    app: Get:9 http://archive.ubuntu.com/ubuntu bionic/main amd64 libsm6 amd64 2:1.2.2-1 [15.8 kB]
+    app: Get:10 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxrender1 amd64 1:0.9.10-1 [18.7 kB]
+    app: Get:11 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxft2 amd64 2.3.2-1 [36.1 kB]
+    app: Get:12 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxinerama1 amd64 2:1.1.3-1 [7908 B]
+    app: Get:13 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxxf86dga1 amd64 2:1.1.4-1 [13.7 kB]
+    app: Get:14 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxxf86vm1 amd64 1:1.1.4-1 [10.6 kB]
+    app: Get:15 http://archive.ubuntu.com/ubuntu bionic/main amd64 mysql-common all 5.8+1.0.4 [7308 B]
+    app: Get:16 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaio1 amd64 0.3.110-5ubuntu0.1 [6476 B]
+    app: Get:17 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-client-core-5.7 amd64 5.7.42-0ubuntu0.18.04.1 [6752 kB]
+    app: Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-client-5.7 amd64 5.7.42-0ubuntu0.18.04.1 [2028 kB]
+    app: Get:19 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server-core-5.7 amd64 5.7.42-0ubuntu0.18.04.1 [7542 kB]
+    app: Get:20 http://archive.ubuntu.com/ubuntu bionic/main amd64 libevent-core-2.1-6 amd64 2.1.8-stable-4build1 [85.9 kB]
+    app: Get:21 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server-5.7 amd64 5.7.42-0ubuntu0.18.04.1 [3011 kB]
+    app: Get:22 http://archive.ubuntu.com/ubuntu bionic/main amd64 hicolor-icon-theme all 0.17-2 [9976 B]
+    app: Get:23 http://archive.ubuntu.com/ubuntu bionic/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+    app: Get:24 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.18.04.1 [27.0 kB]
+    app: Get:25 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libtiff5 amd64 4.0.9-5ubuntu0.10 [154 kB]
+    app: Get:26 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgdk-pixbuf2.0-common all 2.36.11-2 [4536 B]
+    app: Get:27 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgdk-pixbuf2.0-0 amd64 2.36.11-2 [165 kB]
+    app: Get:28 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 gtk-update-icon-cache amd64 3.22.30-1ubuntu4 [28.3 kB]
+    app: Get:29 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpixman-1-0 amd64 0.34.0-2ubuntu0.1 [229 kB]
+    app: Get:30 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-render0 amd64 1.13-2~ubuntu18.04 [14.7 kB]
+    app: Get:31 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-shm0 amd64 1.13-2~ubuntu18.04 [5600 B]
+    app: Get:32 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcairo2 amd64 1.15.10-2ubuntu0.1 [580 kB]
+    app: Get:33 http://archive.ubuntu.com/ubuntu bionic/main amd64 libcroco3 amd64 0.6.12-2 [81.3 kB]
+    app: Get:34 http://archive.ubuntu.com/ubuntu bionic/main amd64 libthai-data all 0.1.27-2 [133 kB]
+    app: Get:35 http://archive.ubuntu.com/ubuntu bionic/main amd64 libdatrie1 amd64 0.2.10-7 [17.8 kB]
+    app: Get:36 http://archive.ubuntu.com/ubuntu bionic/main amd64 libthai0 amd64 0.1.27-2 [18.0 kB]
+    app: Get:37 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpango-1.0-0 amd64 1.40.14-1ubuntu0.1 [153 kB]
+    app: Get:38 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgraphite2-3 amd64 1.3.11-2 [78.7 kB]
+    app: Get:39 http://archive.ubuntu.com/ubuntu bionic/main amd64 libharfbuzz0b amd64 1.7.2-1ubuntu1 [232 kB]
+    app: Get:40 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpangoft2-1.0-0 amd64 1.40.14-1ubuntu0.1 [33.2 kB]
+    app: Get:41 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpangocairo-1.0-0 amd64 1.40.14-1ubuntu0.1 [20.8 kB]
+    app: Get:42 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 librsvg2-2 amd64 2.40.20-2ubuntu0.2 [98.6 kB]
+    app: Get:43 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 librsvg2-common amd64 2.40.20-2ubuntu0.2 [5064 B]
+    app: Get:44 http://archive.ubuntu.com/ubuntu bionic/main amd64 humanity-icon-theme all 0.6.15 [1250 kB]
+    app: Get:45 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 ubuntu-mono all 16.10+18.04.20181005-0ubuntu1 [149 kB]
+    app: Get:46 http://archive.ubuntu.com/ubuntu bionic/main amd64 adwaita-icon-theme all 3.28.0-1ubuntu1 [3306 kB]
+    app: Get:47 http://archive.ubuntu.com/ubuntu bionic/main amd64 libatspi2.0-0 amd64 2.28.0-1 [59.6 kB]
+    app: Get:48 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxtst6 amd64 2:1.2.3-1 [12.8 kB]
+    app: Get:49 http://archive.ubuntu.com/ubuntu bionic/main amd64 at-spi2-core amd64 2.28.0-1 [47.9 kB]
+    app: Get:50 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 java-common all 0.68ubuntu1~18.04.1 [14.5 kB]
+    app: Get:51 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libavahi-common-data amd64 0.7-3.1ubuntu1.3 [22.2 kB]
+    app: Get:52 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libavahi-common3 amd64 0.7-3.1ubuntu1.3 [21.6 kB]
+    app: Get:53 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libavahi-client3 amd64 0.7-3.1ubuntu1.3 [25.2 kB]
+    app: Get:54 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcups2 amd64 2.2.7-1ubuntu2.10 [211 kB]
+    app: Get:55 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 liblcms2-2 amd64 2.9-1ubuntu0.1 [139 kB]
+    app: Get:56 http://archive.ubuntu.com/ubuntu bionic/main amd64 libnspr4 amd64 2:4.18-1ubuntu1 [112 kB]
+    app: Get:57 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnss3 amd64 2:3.35-2ubuntu2.16 [1220 kB]
+    app: Get:58 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libasound2-data all 1.1.3-5ubuntu0.6 [38.5 kB]
+    app: Get:59 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libasound2 amd64 1.1.3-5ubuntu0.6 [360 kB]
+    app: Get:60 http://archive.ubuntu.com/ubuntu bionic/main amd64 libpcsclite1 amd64 1.8.23-1 [21.3 kB]
+    app: Get:61 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 openjdk-11-jre-headless amd64 11.0.19+7~us1-0ubuntu1~18.04.1 [38.1 MB]
+    app: Get:62 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxi6 amd64 2:1.7.9-1 [29.2 kB]
+    app: Get:63 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 openjdk-8-jre-headless amd64 8u372-ga~us1-0ubuntu1~18.04 [28.3 MB]
+    app: Get:64 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 default-jre-headless amd64 2:1.11-68ubuntu1~18.04.1 [10.9 kB]
+    app: Get:65 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 ca-certificates-java all 20180516ubuntu1~18.04.2 [12.5 kB]
+    app: Get:66 http://archive.ubuntu.com/ubuntu bionic/main amd64 fonts-dejavu-extra all 2.37-1 [1953 kB]
+    app: Get:67 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libapache-pom-java all 18-1 [4720 B]
+    app: Get:68 http://archive.ubuntu.com/ubuntu bionic/main amd64 libapr1 amd64 1.6.3-2 [90.9 kB]
+    app: Get:69 http://archive.ubuntu.com/ubuntu bionic/main amd64 libasyncns0 amd64 0.8-6 [12.1 kB]
+    app: Get:70 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libatinject-jsr330-api-java all 1.0+ds1-5 [5348 B]
+    app: Get:71 http://archive.ubuntu.com/ubuntu bionic/main amd64 libatk1.0-data all 2.28.1-1 [2992 B]
+    app: Get:72 http://archive.ubuntu.com/ubuntu bionic/main amd64 libatk1.0-0 amd64 2.28.1-1 [43.9 kB]
+    app: Get:73 http://archive.ubuntu.com/ubuntu bionic/main amd64 libatk-bridge2.0-0 amd64 2.26.2-1 [57.3 kB]
+    app: Get:74 http://archive.ubuntu.com/ubuntu bionic/main amd64 libfontenc1 amd64 1:1.1.3-1 [13.9 kB]
+    app: Get:75 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libglvnd0 amd64 1.0.0-2ubuntu2.3 [47.0 kB]
+    app: Get:76 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libglapi-mesa amd64 20.0.8-0ubuntu1~18.04.1 [26.6 kB]
+    app: Get:77 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libx11-xcb1 amd64 2:1.6.4-3ubuntu0.4 [9720 B]
+    app: Get:78 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-dri2-0 amd64 1.13-2~ubuntu18.04 [6920 B]
+    app: Get:79 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-dri3-0 amd64 1.13-2~ubuntu18.04 [6568 B]
+    app: Get:80 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-glx0 amd64 1.13-2~ubuntu18.04 [22.1 kB]
+    app: Get:81 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-present0 amd64 1.13-2~ubuntu18.04 [5552 B]
+    app: Get:82 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-sync1 amd64 1.13-2~ubuntu18.04 [8808 B]
+    app: Get:83 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxdamage1 amd64 1:1.1.4-3 [6934 B]
+    app: Get:84 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxfixes3 amd64 1:5.0.3-1 [10.8 kB]
+    app: Get:85 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxshmfence1 amd64 1.3-1 [5028 B]
+    app: Get:86 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-amdgpu1 amd64 2.4.101-2~18.04.1 [18.2 kB]
+    app: Get:87 http://archive.ubuntu.com/ubuntu bionic/main amd64 libpciaccess0 amd64 0.14-1 [17.9 kB]
+    app: Get:88 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-intel1 amd64 2.4.101-2~18.04.1 [60.0 kB]
+    app: Get:89 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-nouveau2 amd64 2.4.101-2~18.04.1 [16.5 kB]
+    app: Get:90 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdrm-radeon1 amd64 2.4.101-2~18.04.1 [21.7 kB]
+    app: Get:91 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libllvm10 amd64 1:10.0.0-4ubuntu1~18.04.2 [15.4 MB]
+    app: Get:92 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsensors4 amd64 1:3.4.0-4ubuntu0.1 [28.3 kB]
+    app: Get:93 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgl1-mesa-dri amd64 20.0.8-0ubuntu1~18.04.1 [9333 kB]
+    app: Get:94 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libglx-mesa0 amd64 20.0.8-0ubuntu1~18.04.1 [139 kB]
+    app: Get:95 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libglx0 amd64 1.0.0-2ubuntu2.3 [28.1 kB]
+    app: Get:96 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgl1 amd64 1.0.0-2ubuntu2.3 [86.2 kB]
+    app: Get:97 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgl1-mesa-glx amd64 20.0.8-0ubuntu1~18.04.1 [5532 B]
+    app: Get:98 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxt6 amd64 1:1.1.5-1 [160 kB]
+    app: Get:99 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxmu6 amd64 2:1.1.2-2 [46.0 kB]
+    app: Get:100 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.18.04.2 [34.8 kB]
+    app: Get:101 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxaw7 amd64 2:1.0.13-1 [173 kB]
+    app: Get:102 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-shape0 amd64 1.13-2~ubuntu18.04 [5972 B]
+    app: Get:103 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxcomposite1 amd64 1:0.4.4-2 [6988 B]
+    app: Get:104 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxrandr2 amd64 2:1.5.1-1 [18.1 kB]
+    app: Get:105 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxv1 amd64 2:1.0.11-1 [10.7 kB]
+    app: Get:106 http://archive.ubuntu.com/ubuntu bionic/main amd64 x11-utils amd64 7.7+3build1 [196 kB]
+    app: Get:107 http://archive.ubuntu.com/ubuntu bionic/main amd64 libatk-wrapper-java all 0.33.3-20ubuntu0.1 [34.7 kB]
+    app: Get:108 http://archive.ubuntu.com/ubuntu bionic/main amd64 libatk-wrapper-java-jni amd64 0.33.3-20ubuntu0.1 [28.3 kB]
+    app: Get:109 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libgeronimo-interceptor-3.0-spec-java all 1.0.1-4fakesync [8616 B]
+    app: Get:110 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libcdi-api-java all 1.2-2 [54.5 kB]
+    app: Get:111 http://archive.ubuntu.com/ubuntu bionic/main amd64 libhtml-tagset-perl all 3.20-3 [12.1 kB]
+    app: Get:112 http://archive.ubuntu.com/ubuntu bionic/main amd64 liburi-perl all 1.73-1 [77.2 kB]
+    app: Get:113 http://archive.ubuntu.com/ubuntu bionic/main amd64 libhtml-parser-perl amd64 3.72-3build1 [85.9 kB]
+    app: Get:114 http://archive.ubuntu.com/ubuntu bionic/main amd64 libcgi-pm-perl all 4.38-1 [185 kB]
+    app: Get:115 http://archive.ubuntu.com/ubuntu bionic/main amd64 libfcgi-perl amd64 0.78-2build1 [32.8 kB]
+    app: Get:116 http://archive.ubuntu.com/ubuntu bionic/main amd64 libcgi-fast-perl all 1:2.13-1 [9940 B]
+    app: Get:117 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libcommons-cli-java all 1.4-1 [53.8 kB]
+    app: Get:118 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libcommons-parent-java all 43-1 [10.8 kB]
+    app: Get:119 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libcommons-io-java all 2.6-2ubuntu0.18.04.1 [198 kB]
+    app: Get:120 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libcommons-lang3-java all 3.8-1~18.04.2 [479 kB]
+    app: Get:121 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libeclipse-jdt-core-java all 3.15.0+eclipse4.9-1~18.04 [6169 kB]
+    app: Get:122 http://archive.ubuntu.com/ubuntu bionic/main amd64 libencode-locale-perl all 1.05-1 [12.3 kB]
+    app: Get:123 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libflac8 amd64 1.3.2-1ubuntu0.1 [213 kB]
+    app: Get:124 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgtk2.0-common all 2.24.32-1ubuntu1 [125 kB]
+    app: Get:125 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxcursor1 amd64 1:1.1.15-1 [19.8 kB]
+    app: Get:126 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgtk2.0-0 amd64 2.24.32-1ubuntu1 [1769 kB]
+    app: Get:127 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgail18 amd64 2.24.32-1ubuntu1 [14.2 kB]
+    app: Get:128 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgail-common amd64 2.24.32-1ubuntu1 [112 kB]
+    app: Get:129 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgdk-pixbuf2.0-bin amd64 2.36.11-2 [7864 B]
+    app: Get:130 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libgeronimo-annotation-1.3-spec-java all 1.0-1 [10.7 kB]
+    app: Get:131 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgif7 amd64 5.1.4-2ubuntu0.1 [30.9 kB]
+    app: Get:132 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgtk2.0-bin amd64 2.24.32-1ubuntu1 [7536 B]
+    app: Get:133 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libjsr305-java all 0.1~+svn49-10 [26.5 kB]
+    app: Get:134 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libguava-java all 19.0-1 [2028 kB]
+    app: Get:135 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libaopalliance-java all 20070526-6 [9084 B]
+    app: Get:136 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libguice-java all 4.0-4 [853 kB]
+    app: Get:137 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libhawtjni-runtime-java all 1.15-2 [27.1 kB]
+    app: Get:138 http://archive.ubuntu.com/ubuntu bionic/main amd64 libhtml-template-perl all 2.97-1 [59.0 kB]
+    app: Get:139 http://archive.ubuntu.com/ubuntu bionic/main amd64 libtimedate-perl all 2.3000-2 [37.5 kB]
+    app: Get:140 http://archive.ubuntu.com/ubuntu bionic/main amd64 libhttp-date-perl all 6.02-1 [10.4 kB]
+    app: Get:141 http://archive.ubuntu.com/ubuntu bionic/main amd64 libio-html-perl all 1.001-1 [14.9 kB]
+    app: Get:142 http://archive.ubuntu.com/ubuntu bionic/main amd64 liblwp-mediatypes-perl all 6.02-1 [21.7 kB]
+    app: Get:143 http://archive.ubuntu.com/ubuntu bionic/main amd64 libhttp-message-perl all 6.14-1 [72.1 kB]
+    app: Get:144 http://archive.ubuntu.com/ubuntu bionic/main amd64 xorg-sgml-doctools all 1:1.11-1 [12.9 kB]
+    app: Get:145 http://archive.ubuntu.com/ubuntu bionic/main amd64 x11proto-dev all 2018.4-4 [251 kB]
+    app: Get:146 http://archive.ubuntu.com/ubuntu bionic/main amd64 x11proto-core-dev all 2018.4-4 [2620 B]
+    app: Get:147 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libice-dev amd64 2:1.0.9-2ubuntu0.18.04.1 [47.2 kB]
+    app: Get:148 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libjansi-native-java all 1.7-1 [19.4 kB]
+    app: Get:149 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libjansi-java all 1.16-1 [36.2 kB]
+    app: Get:150 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libmaven-parent-java all 31-2~18.04 [5196 B]
+    app: Get:151 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libplexus-utils2-java all 3.0.24-3 [246 kB]
+    app: Get:152 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libwagon-provider-api-java all 3.0.0-2 [48.2 kB]
+    app: Get:153 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libmaven-resolver-java all 1.3.1-1~18.04 [549 kB]
+    app: Get:154 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libmaven-shared-utils-java all 3.3.0-1~18.04 [149 kB]
+    app: Get:155 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libplexus-cipher-java all 1.7-3 [15.1 kB]
+    app: Get:156 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libplexus-classworlds-java all 2.5.2-2 [49.3 kB]
+    app: Get:157 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libplexus-component-annotations-java all 1.7.1-7 [6596 B]
+    app: Get:158 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libplexus-interpolation-java all 1.24-1 [73.4 kB]
+    app: Get:159 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libplexus-sec-dispatcher-java all 1.4-3 [28.0 kB]
+    app: Get:160 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libslf4j-java all 1.7.25-3 [141 kB]
+    app: Get:161 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libsisu-inject-java all 0.3.2-2 [346 kB]
+    app: Get:162 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libsisu-plexus-java all 0.3.3-3 [182 kB]
+    app: Get:163 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libmaven3-core-java all 3.6.0-1~18.04.1 [1465 kB]
+    app: Get:164 http://archive.ubuntu.com/ubuntu bionic/main amd64 libpthread-stubs0-dev amd64 0.3-4 [4068 B]
+    app: Get:165 http://archive.ubuntu.com/ubuntu bionic/main amd64 libvorbis0a amd64 1.3.5-4.2 [86.4 kB]
+    app: Get:166 http://archive.ubuntu.com/ubuntu bionic/main amd64 libvorbisenc2 amd64 1.3.5-4.2 [70.7 kB]
+    app: Get:167 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsndfile1 amd64 1.0.28-4ubuntu0.18.04.2 [170 kB]
+    app: Get:168 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpulse0 amd64 1:11.1-1ubuntu7.11 [266 kB]
+    app: Get:169 http://archive.ubuntu.com/ubuntu bionic/main amd64 libsm-dev amd64 2:1.2.2-1 [16.2 kB]
+    app: Get:170 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libtomcat9-java all 9.0.16-3ubuntu0.18.04.2 [5751 kB]
+    app: Get:171 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libwagon-file-java all 3.0.0-2 [7960 B]
+    app: Get:172 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libwagon-http-shaded-java all 3.0.0-2 [1757 kB]
+    app: Get:173 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxau-dev amd64 1:1.0.8-1ubuntu1 [9476 B]
+    app: Get:174 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxdmcp-dev amd64 1:1.1.2-3 [25.1 kB]
+    app: Get:175 http://archive.ubuntu.com/ubuntu bionic/main amd64 xtrans-dev all 1.3.5-1 [70.5 kB]
+    app: Get:176 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb1-dev amd64 1.13-2~ubuntu18.04 [80.0 kB]
+    app: Get:177 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libx11-dev amd64 2:1.6.4-3ubuntu0.4 [641 kB]
+    app: Get:178 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libx11-doc all 2:1.6.4-3ubuntu0.4 [2065 kB]
+    app: Get:179 http://archive.ubuntu.com/ubuntu bionic/main amd64 libxt-dev amd64 1:1.1.5-1 [395 kB]
+    app: Get:180 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 maven all 3.6.0-1~18.04.1 [22.4 kB]
+    app: Get:181 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server all 5.7.42-0ubuntu0.18.04.1 [9944 B]
+    app: Get:182 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 openjdk-8-jre amd64 8u372-ga~us1-0ubuntu1~18.04 [69.8 kB]
+    app: Get:183 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 openjdk-8-jdk-headless amd64 8u372-ga~us1-0ubuntu1~18.04 [8291 kB]
+    app: Get:184 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 openjdk-8-jdk amd64 8u372-ga~us1-0ubuntu1~18.04 [4076 kB]
+    app: Get:185 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 tomcat9-common all 9.0.16-3ubuntu0.18.04.2 [59.7 kB]
+    app: Get:186 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 tomcat9 all 9.0.16-3ubuntu0.18.04.2 [35.9 kB]
+    app: Get:187 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libtcnative-1 amd64 1.2.21-1~18.04.1build1 [80.9 kB]
+    app: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    app: Fetched 165 MB in 19s (8534 kB/s)
+    app: Selecting previously unselected package fonts-dejavu-core.
+    app: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60336 files and directories currently installed.)
+    app: Preparing to unpack .../00-fonts-dejavu-core_2.37-1_all.deb ...
+    app: Unpacking fonts-dejavu-core (2.37-1) ...
+    app: Selecting previously unselected package fontconfig-config.
+    app: Preparing to unpack .../01-fontconfig-config_2.12.6-0ubuntu2_all.deb ...
+    app: Unpacking fontconfig-config (2.12.6-0ubuntu2) ...
+    app: Selecting previously unselected package libfontconfig1:amd64.
+    app: Preparing to unpack .../02-libfontconfig1_2.12.6-0ubuntu2_amd64.deb ...
+    app: Unpacking libfontconfig1:amd64 (2.12.6-0ubuntu2) ...
+    app: Selecting previously unselected package fontconfig.
+    app: Preparing to unpack .../03-fontconfig_2.12.6-0ubuntu2_amd64.deb ...
+    app: Unpacking fontconfig (2.12.6-0ubuntu2) ...
+    app: Selecting previously unselected package libjpeg-turbo8:amd64.
+    app: Preparing to unpack .../04-libjpeg-turbo8_1.5.2-0ubuntu5.18.04.6_amd64.deb ...
+    app: Unpacking libjpeg-turbo8:amd64 (1.5.2-0ubuntu5.18.04.6) ...
+    app: Selecting previously unselected package libogg0:amd64.
+    app: Preparing to unpack .../05-libogg0_1.3.2-1_amd64.deb ...
+    app: Unpacking libogg0:amd64 (1.3.2-1) ...
+    app: Selecting previously unselected package x11-common.
+    app: Preparing to unpack .../06-x11-common_1%3a7.7+19ubuntu7.1_all.deb ...
+    app: dpkg-query: no packages found matching nux-tools
+    app: Unpacking x11-common (1:7.7+19ubuntu7.1) ...
+    app: Selecting previously unselected package libice6:amd64.
+    app: Preparing to unpack .../07-libice6_2%3a1.0.9-2ubuntu0.18.04.1_amd64.deb ...
+    app: Unpacking libice6:amd64 (2:1.0.9-2ubuntu0.18.04.1) ...
+    app: Selecting previously unselected package libsm6:amd64.
+    app: Preparing to unpack .../08-libsm6_2%3a1.2.2-1_amd64.deb ...
+    app: Unpacking libsm6:amd64 (2:1.2.2-1) ...
+    app: Selecting previously unselected package libxrender1:amd64.
+    app: Preparing to unpack .../09-libxrender1_1%3a0.9.10-1_amd64.deb ...
+    app: Unpacking libxrender1:amd64 (1:0.9.10-1) ...
+    app: Selecting previously unselected package libxft2:amd64.
+    app: Preparing to unpack .../10-libxft2_2.3.2-1_amd64.deb ...
+    app: Unpacking libxft2:amd64 (2.3.2-1) ...
+    app: Selecting previously unselected package libxinerama1:amd64.
+    app: Preparing to unpack .../11-libxinerama1_2%3a1.1.3-1_amd64.deb ...
+    app: Unpacking libxinerama1:amd64 (2:1.1.3-1) ...
+    app: Selecting previously unselected package libxxf86dga1:amd64.
+    app: Preparing to unpack .../12-libxxf86dga1_2%3a1.1.4-1_amd64.deb ...
+    app: Unpacking libxxf86dga1:amd64 (2:1.1.4-1) ...
+    app: Selecting previously unselected package libxxf86vm1:amd64.
+    app: Preparing to unpack .../13-libxxf86vm1_1%3a1.1.4-1_amd64.deb ...
+    app: Unpacking libxxf86vm1:amd64 (1:1.1.4-1) ...
+    app: Selecting previously unselected package mysql-common.
+    app: Preparing to unpack .../14-mysql-common_5.8+1.0.4_all.deb ...
+    app: Unpacking mysql-common (5.8+1.0.4) ...
+    app: Selecting previously unselected package libaio1:amd64.
+    app: Preparing to unpack .../15-libaio1_0.3.110-5ubuntu0.1_amd64.deb ...
+    app: Unpacking libaio1:amd64 (0.3.110-5ubuntu0.1) ...
+    app: Selecting previously unselected package mysql-client-core-5.7.
+    app: Preparing to unpack .../16-mysql-client-core-5.7_5.7.42-0ubuntu0.18.04.1_amd64.deb ...
+    app: Unpacking mysql-client-core-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+    app: Selecting previously unselected package mysql-client-5.7.
+    app: Preparing to unpack .../17-mysql-client-5.7_5.7.42-0ubuntu0.18.04.1_amd64.deb ...
+    app: Unpacking mysql-client-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+    app: Selecting previously unselected package mysql-server-core-5.7.
+    app: Preparing to unpack .../18-mysql-server-core-5.7_5.7.42-0ubuntu0.18.04.1_amd64.deb ...
+    app: Unpacking mysql-server-core-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+    app: Selecting previously unselected package libevent-core-2.1-6:amd64.
+    app: Preparing to unpack .../19-libevent-core-2.1-6_2.1.8-stable-4build1_amd64.deb ...
+    app: Unpacking libevent-core-2.1-6:amd64 (2.1.8-stable-4build1) ...
+    app: Setting up mysql-common (5.8+1.0.4) ...
+    app: update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+    app: Selecting previously unselected package mysql-server-5.7.
+    app: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60725 files and directories currently installed.)
+    app: Preparing to unpack .../000-mysql-server-5.7_5.7.42-0ubuntu0.18.04.1_amd64.deb ...
+    app: Unpacking mysql-server-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+    app: Selecting previously unselected package hicolor-icon-theme.
+    app: Preparing to unpack .../001-hicolor-icon-theme_0.17-2_all.deb ...
+    app: Unpacking hicolor-icon-theme (0.17-2) ...
+    app: Selecting previously unselected package libjpeg8:amd64.
+    app: Preparing to unpack .../002-libjpeg8_8c-2ubuntu8_amd64.deb ...
+    app: Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+    app: Selecting previously unselected package libjbig0:amd64.
+    app: Preparing to unpack .../003-libjbig0_2.1-3.1ubuntu0.18.04.1_amd64.deb ...
+    app: Unpacking libjbig0:amd64 (2.1-3.1ubuntu0.18.04.1) ...
+    app: Selecting previously unselected package libtiff5:amd64.
+    app: Preparing to unpack .../004-libtiff5_4.0.9-5ubuntu0.10_amd64.deb ...
+    app: Unpacking libtiff5:amd64 (4.0.9-5ubuntu0.10) ...
+    app: Selecting previously unselected package libgdk-pixbuf2.0-common.
+    app: Preparing to unpack .../005-libgdk-pixbuf2.0-common_2.36.11-2_all.deb ...
+    app: Unpacking libgdk-pixbuf2.0-common (2.36.11-2) ...
+    app: Selecting previously unselected package libgdk-pixbuf2.0-0:amd64.
+    app: Preparing to unpack .../006-libgdk-pixbuf2.0-0_2.36.11-2_amd64.deb ...
+    app: Unpacking libgdk-pixbuf2.0-0:amd64 (2.36.11-2) ...
+    app: Selecting previously unselected package gtk-update-icon-cache.
+    app: Preparing to unpack .../007-gtk-update-icon-cache_3.22.30-1ubuntu4_amd64.deb ...
+    app: No diversion 'diversion of /usr/sbin/update-icon-caches to /usr/sbin/update-icon-caches.gtk2 by libgtk-3-bin', none removed.
+    app: No diversion 'diversion of /usr/share/man/man8/update-icon-caches.8.gz to /usr/share/man/man8/update-icon-caches.gtk2.8.gz by libgtk-3-bin', none removed.
+    app: Unpacking gtk-update-icon-cache (3.22.30-1ubuntu4) ...
+    app: Selecting previously unselected package libpixman-1-0:amd64.
+    app: Preparing to unpack .../008-libpixman-1-0_0.34.0-2ubuntu0.1_amd64.deb ...
+    app: Unpacking libpixman-1-0:amd64 (0.34.0-2ubuntu0.1) ...
+    app: Selecting previously unselected package libxcb-render0:amd64.
+    app: Preparing to unpack .../009-libxcb-render0_1.13-2~ubuntu18.04_amd64.deb ...
+    app: Unpacking libxcb-render0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Selecting previously unselected package libxcb-shm0:amd64.
+    app: Preparing to unpack .../010-libxcb-shm0_1.13-2~ubuntu18.04_amd64.deb ...
+    app: Unpacking libxcb-shm0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Selecting previously unselected package libcairo2:amd64.
+    app: Preparing to unpack .../011-libcairo2_1.15.10-2ubuntu0.1_amd64.deb ...
+    app: Unpacking libcairo2:amd64 (1.15.10-2ubuntu0.1) ...
+    app: Selecting previously unselected package libcroco3:amd64.
+    app: Preparing to unpack .../012-libcroco3_0.6.12-2_amd64.deb ...
+    app: Unpacking libcroco3:amd64 (0.6.12-2) ...
+    app: Selecting previously unselected package libthai-data.
+    app: Preparing to unpack .../013-libthai-data_0.1.27-2_all.deb ...
+    app: Unpacking libthai-data (0.1.27-2) ...
+    app: Selecting previously unselected package libdatrie1:amd64.
+    app: Preparing to unpack .../014-libdatrie1_0.2.10-7_amd64.deb ...
+    app: Unpacking libdatrie1:amd64 (0.2.10-7) ...
+    app: Selecting previously unselected package libthai0:amd64.
+    app: Preparing to unpack .../015-libthai0_0.1.27-2_amd64.deb ...
+    app: Unpacking libthai0:amd64 (0.1.27-2) ...
+    app: Selecting previously unselected package libpango-1.0-0:amd64.
+    app: Preparing to unpack .../016-libpango-1.0-0_1.40.14-1ubuntu0.1_amd64.deb ...
+    app: Unpacking libpango-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...
+    app: Selecting previously unselected package libgraphite2-3:amd64.
+    app: Preparing to unpack .../017-libgraphite2-3_1.3.11-2_amd64.deb ...
+    app: Unpacking libgraphite2-3:amd64 (1.3.11-2) ...
+    app: Selecting previously unselected package libharfbuzz0b:amd64.
+    app: Preparing to unpack .../018-libharfbuzz0b_1.7.2-1ubuntu1_amd64.deb ...
+    app: Unpacking libharfbuzz0b:amd64 (1.7.2-1ubuntu1) ...
+    app: Selecting previously unselected package libpangoft2-1.0-0:amd64.
+    app: Preparing to unpack .../019-libpangoft2-1.0-0_1.40.14-1ubuntu0.1_amd64.deb ...
+    app: Unpacking libpangoft2-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...
+    app: Selecting previously unselected package libpangocairo-1.0-0:amd64.
+    app: Preparing to unpack .../020-libpangocairo-1.0-0_1.40.14-1ubuntu0.1_amd64.deb ...
+    app: Unpacking libpangocairo-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...
+    app: Selecting previously unselected package librsvg2-2:amd64.
+    app: Preparing to unpack .../021-librsvg2-2_2.40.20-2ubuntu0.2_amd64.deb ...
+    app: Unpacking librsvg2-2:amd64 (2.40.20-2ubuntu0.2) ...
+    app: Selecting previously unselected package librsvg2-common:amd64.
+    app: Preparing to unpack .../022-librsvg2-common_2.40.20-2ubuntu0.2_amd64.deb ...
+    app: Unpacking librsvg2-common:amd64 (2.40.20-2ubuntu0.2) ...
+    app: Selecting previously unselected package humanity-icon-theme.
+    app: Preparing to unpack .../023-humanity-icon-theme_0.6.15_all.deb ...
+    app: Unpacking humanity-icon-theme (0.6.15) ...
+    app: Selecting previously unselected package ubuntu-mono.
+    app: Preparing to unpack .../024-ubuntu-mono_16.10+18.04.20181005-0ubuntu1_all.deb ...
+    app: Unpacking ubuntu-mono (16.10+18.04.20181005-0ubuntu1) ...
+    app: Selecting previously unselected package adwaita-icon-theme.
+    app: Preparing to unpack .../025-adwaita-icon-theme_3.28.0-1ubuntu1_all.deb ...
+    app: Unpacking adwaita-icon-theme (3.28.0-1ubuntu1) ...
+    app: Selecting previously unselected package libatspi2.0-0:amd64.
+    app: Preparing to unpack .../026-libatspi2.0-0_2.28.0-1_amd64.deb ...
+    app: Unpacking libatspi2.0-0:amd64 (2.28.0-1) ...
+    app: Selecting previously unselected package libxtst6:amd64.
+    app: Preparing to unpack .../027-libxtst6_2%3a1.2.3-1_amd64.deb ...
+    app: Unpacking libxtst6:amd64 (2:1.2.3-1) ...
+    app: Selecting previously unselected package at-spi2-core.
+    app: Preparing to unpack .../028-at-spi2-core_2.28.0-1_amd64.deb ...
+    app: Unpacking at-spi2-core (2.28.0-1) ...
+    app: Selecting previously unselected package java-common.
+    app: Preparing to unpack .../029-java-common_0.68ubuntu1~18.04.1_all.deb ...
+    app: Unpacking java-common (0.68ubuntu1~18.04.1) ...
+    app: Selecting previously unselected package libavahi-common-data:amd64.
+    app: Preparing to unpack .../030-libavahi-common-data_0.7-3.1ubuntu1.3_amd64.deb ...
+    app: Unpacking libavahi-common-data:amd64 (0.7-3.1ubuntu1.3) ...
+    app: Selecting previously unselected package libavahi-common3:amd64.
+    app: Preparing to unpack .../031-libavahi-common3_0.7-3.1ubuntu1.3_amd64.deb ...
+    app: Unpacking libavahi-common3:amd64 (0.7-3.1ubuntu1.3) ...
+    app: Selecting previously unselected package libavahi-client3:amd64.
+    app: Preparing to unpack .../032-libavahi-client3_0.7-3.1ubuntu1.3_amd64.deb ...
+    app: Unpacking libavahi-client3:amd64 (0.7-3.1ubuntu1.3) ...
+    app: Selecting previously unselected package libcups2:amd64.
+    app: Preparing to unpack .../033-libcups2_2.2.7-1ubuntu2.10_amd64.deb ...
+    app: Unpacking libcups2:amd64 (2.2.7-1ubuntu2.10) ...
+    app: Selecting previously unselected package liblcms2-2:amd64.
+    app: Preparing to unpack .../034-liblcms2-2_2.9-1ubuntu0.1_amd64.deb ...
+    app: Unpacking liblcms2-2:amd64 (2.9-1ubuntu0.1) ...
+    app: Selecting previously unselected package libnspr4:amd64.
+    app: Preparing to unpack .../035-libnspr4_2%3a4.18-1ubuntu1_amd64.deb ...
+    app: Unpacking libnspr4:amd64 (2:4.18-1ubuntu1) ...
+    app: Selecting previously unselected package libnss3:amd64.
+    app: Preparing to unpack .../036-libnss3_2%3a3.35-2ubuntu2.16_amd64.deb ...
+    app: Unpacking libnss3:amd64 (2:3.35-2ubuntu2.16) ...
+    app: Selecting previously unselected package libasound2-data.
+    app: Preparing to unpack .../037-libasound2-data_1.1.3-5ubuntu0.6_all.deb ...
+    app: Unpacking libasound2-data (1.1.3-5ubuntu0.6) ...
+    app: Selecting previously unselected package libasound2:amd64.
+    app: Preparing to unpack .../038-libasound2_1.1.3-5ubuntu0.6_amd64.deb ...
+    app: Unpacking libasound2:amd64 (1.1.3-5ubuntu0.6) ...
+    app: Selecting previously unselected package libpcsclite1:amd64.
+    app: Preparing to unpack .../039-libpcsclite1_1.8.23-1_amd64.deb ...
+    app: Unpacking libpcsclite1:amd64 (1.8.23-1) ...
+    app: Selecting previously unselected package openjdk-11-jre-headless:amd64.
+    app: Preparing to unpack .../040-openjdk-11-jre-headless_11.0.19+7~us1-0ubuntu1~18.04.1_amd64.deb ...
+    app: Unpacking openjdk-11-jre-headless:amd64 (11.0.19+7~us1-0ubuntu1~18.04.1) ...
+    app: Selecting previously unselected package libxi6:amd64.
+    app: Preparing to unpack .../041-libxi6_2%3a1.7.9-1_amd64.deb ...
+    app: Unpacking libxi6:amd64 (2:1.7.9-1) ...
+    app: Selecting previously unselected package openjdk-8-jre-headless:amd64.
+    app: Preparing to unpack .../042-openjdk-8-jre-headless_8u372-ga~us1-0ubuntu1~18.04_amd64.deb ...
+    app: Unpacking openjdk-8-jre-headless:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+    app: Selecting previously unselected package default-jre-headless.
+    app: Preparing to unpack .../043-default-jre-headless_2%3a1.11-68ubuntu1~18.04.1_amd64.deb ...
+    app: Unpacking default-jre-headless (2:1.11-68ubuntu1~18.04.1) ...
+    app: Selecting previously unselected package ca-certificates-java.
+    app: Preparing to unpack .../044-ca-certificates-java_20180516ubuntu1~18.04.2_all.deb ...
+    app: Unpacking ca-certificates-java (20180516ubuntu1~18.04.2) ...
+    app: Selecting previously unselected package fonts-dejavu-extra.
+    app: Preparing to unpack .../045-fonts-dejavu-extra_2.37-1_all.deb ...
+    app: Unpacking fonts-dejavu-extra (2.37-1) ...
+    app: Selecting previously unselected package libapache-pom-java.
+    app: Preparing to unpack .../046-libapache-pom-java_18-1_all.deb ...
+    app: Unpacking libapache-pom-java (18-1) ...
+    app: Selecting previously unselected package libapr1:amd64.
+    app: Preparing to unpack .../047-libapr1_1.6.3-2_amd64.deb ...
+    app: Unpacking libapr1:amd64 (1.6.3-2) ...
+    app: Selecting previously unselected package libasyncns0:amd64.
+    app: Preparing to unpack .../048-libasyncns0_0.8-6_amd64.deb ...
+    app: Unpacking libasyncns0:amd64 (0.8-6) ...
+    app: Selecting previously unselected package libatinject-jsr330-api-java.
+    app: Preparing to unpack .../049-libatinject-jsr330-api-java_1.0+ds1-5_all.deb ...
+    app: Unpacking libatinject-jsr330-api-java (1.0+ds1-5) ...
+    app: Selecting previously unselected package libatk1.0-data.
+    app: Preparing to unpack .../050-libatk1.0-data_2.28.1-1_all.deb ...
+    app: Unpacking libatk1.0-data (2.28.1-1) ...
+    app: Selecting previously unselected package libatk1.0-0:amd64.
+    app: Preparing to unpack .../051-libatk1.0-0_2.28.1-1_amd64.deb ...
+    app: Unpacking libatk1.0-0:amd64 (2.28.1-1) ...
+    app: Selecting previously unselected package libatk-bridge2.0-0:amd64.
+    app: Preparing to unpack .../052-libatk-bridge2.0-0_2.26.2-1_amd64.deb ...
+    app: Unpacking libatk-bridge2.0-0:amd64 (2.26.2-1) ...
+    app: Selecting previously unselected package libfontenc1:amd64.
+    app: Preparing to unpack .../053-libfontenc1_1%3a1.1.3-1_amd64.deb ...
+    app: Unpacking libfontenc1:amd64 (1:1.1.3-1) ...
+    app: Selecting previously unselected package libglvnd0:amd64.
+    app: Preparing to unpack .../054-libglvnd0_1.0.0-2ubuntu2.3_amd64.deb ...
+    app: Unpacking libglvnd0:amd64 (1.0.0-2ubuntu2.3) ...
+    app: Selecting previously unselected package libglapi-mesa:amd64.
+    app: Preparing to unpack .../055-libglapi-mesa_20.0.8-0ubuntu1~18.04.1_amd64.deb ...
+    app: Unpacking libglapi-mesa:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+    app: Selecting previously unselected package libx11-xcb1:amd64.
+    app: Preparing to unpack .../056-libx11-xcb1_2%3a1.6.4-3ubuntu0.4_amd64.deb ...
+    app: Unpacking libx11-xcb1:amd64 (2:1.6.4-3ubuntu0.4) ...
+    app: Selecting previously unselected package libxcb-dri2-0:amd64.
+    app: Preparing to unpack .../057-libxcb-dri2-0_1.13-2~ubuntu18.04_amd64.deb ...
+    app: Unpacking libxcb-dri2-0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Selecting previously unselected package libxcb-dri3-0:amd64.
+    app: Preparing to unpack .../058-libxcb-dri3-0_1.13-2~ubuntu18.04_amd64.deb ...
+    app: Unpacking libxcb-dri3-0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Selecting previously unselected package libxcb-glx0:amd64.
+    app: Preparing to unpack .../059-libxcb-glx0_1.13-2~ubuntu18.04_amd64.deb ...
+    app: Unpacking libxcb-glx0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Selecting previously unselected package libxcb-present0:amd64.
+    app: Preparing to unpack .../060-libxcb-present0_1.13-2~ubuntu18.04_amd64.deb ...
+    app: Unpacking libxcb-present0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Selecting previously unselected package libxcb-sync1:amd64.
+    app: Preparing to unpack .../061-libxcb-sync1_1.13-2~ubuntu18.04_amd64.deb ...
+    app: Unpacking libxcb-sync1:amd64 (1.13-2~ubuntu18.04) ...
+    app: Selecting previously unselected package libxdamage1:amd64.
+    app: Preparing to unpack .../062-libxdamage1_1%3a1.1.4-3_amd64.deb ...
+    app: Unpacking libxdamage1:amd64 (1:1.1.4-3) ...
+    app: Selecting previously unselected package libxfixes3:amd64.
+    app: Preparing to unpack .../063-libxfixes3_1%3a5.0.3-1_amd64.deb ...
+    app: Unpacking libxfixes3:amd64 (1:5.0.3-1) ...
+    app: Selecting previously unselected package libxshmfence1:amd64.
+    app: Preparing to unpack .../064-libxshmfence1_1.3-1_amd64.deb ...
+    app: Unpacking libxshmfence1:amd64 (1.3-1) ...
+    app: Selecting previously unselected package libdrm-amdgpu1:amd64.
+    app: Preparing to unpack .../065-libdrm-amdgpu1_2.4.101-2~18.04.1_amd64.deb ...
+    app: Unpacking libdrm-amdgpu1:amd64 (2.4.101-2~18.04.1) ...
+    app: Selecting previously unselected package libpciaccess0:amd64.
+    app: Preparing to unpack .../066-libpciaccess0_0.14-1_amd64.deb ...
+    app: Unpacking libpciaccess0:amd64 (0.14-1) ...
+    app: Selecting previously unselected package libdrm-intel1:amd64.
+    app: Preparing to unpack .../067-libdrm-intel1_2.4.101-2~18.04.1_amd64.deb ...
+    app: Unpacking libdrm-intel1:amd64 (2.4.101-2~18.04.1) ...
+    app: Selecting previously unselected package libdrm-nouveau2:amd64.
+    app: Preparing to unpack .../068-libdrm-nouveau2_2.4.101-2~18.04.1_amd64.deb ...
+    app: Unpacking libdrm-nouveau2:amd64 (2.4.101-2~18.04.1) ...
+    app: Selecting previously unselected package libdrm-radeon1:amd64.
+    app: Preparing to unpack .../069-libdrm-radeon1_2.4.101-2~18.04.1_amd64.deb ...
+    app: Unpacking libdrm-radeon1:amd64 (2.4.101-2~18.04.1) ...
+    app: Selecting previously unselected package libllvm10:amd64.
+    app: Preparing to unpack .../070-libllvm10_1%3a10.0.0-4ubuntu1~18.04.2_amd64.deb ...
+    app: Unpacking libllvm10:amd64 (1:10.0.0-4ubuntu1~18.04.2) ...
+    app: Selecting previously unselected package libsensors4:amd64.
+    app: Preparing to unpack .../071-libsensors4_1%3a3.4.0-4ubuntu0.1_amd64.deb ...
+    app: Unpacking libsensors4:amd64 (1:3.4.0-4ubuntu0.1) ...
+    app: Selecting previously unselected package libgl1-mesa-dri:amd64.
+    app: Preparing to unpack .../072-libgl1-mesa-dri_20.0.8-0ubuntu1~18.04.1_amd64.deb ...
+    app: Unpacking libgl1-mesa-dri:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+    app: Selecting previously unselected package libglx-mesa0:amd64.
+    app: Preparing to unpack .../073-libglx-mesa0_20.0.8-0ubuntu1~18.04.1_amd64.deb ...
+    app: Unpacking libglx-mesa0:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+    app: Selecting previously unselected package libglx0:amd64.
+    app: Preparing to unpack .../074-libglx0_1.0.0-2ubuntu2.3_amd64.deb ...
+    app: Unpacking libglx0:amd64 (1.0.0-2ubuntu2.3) ...
+    app: Selecting previously unselected package libgl1:amd64.
+    app: Preparing to unpack .../075-libgl1_1.0.0-2ubuntu2.3_amd64.deb ...
+    app: Unpacking libgl1:amd64 (1.0.0-2ubuntu2.3) ...
+    app: Selecting previously unselected package libgl1-mesa-glx:amd64.
+    app: Preparing to unpack .../076-libgl1-mesa-glx_20.0.8-0ubuntu1~18.04.1_amd64.deb ...
+    app: Unpacking libgl1-mesa-glx:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+    app: Selecting previously unselected package libxt6:amd64.
+    app: Preparing to unpack .../077-libxt6_1%3a1.1.5-1_amd64.deb ...
+    app: Unpacking libxt6:amd64 (1:1.1.5-1) ...
+    app: Selecting previously unselected package libxmu6:amd64.
+    app: Preparing to unpack .../078-libxmu6_2%3a1.1.2-2_amd64.deb ...
+    app: Unpacking libxmu6:amd64 (2:1.1.2-2) ...
+    app: Selecting previously unselected package libxpm4:amd64.
+    app: Preparing to unpack .../079-libxpm4_1%3a3.5.12-1ubuntu0.18.04.2_amd64.deb ...
+    app: Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.18.04.2) ...
+    app: Selecting previously unselected package libxaw7:amd64.
+    app: Preparing to unpack .../080-libxaw7_2%3a1.0.13-1_amd64.deb ...
+    app: Unpacking libxaw7:amd64 (2:1.0.13-1) ...
+    app: Selecting previously unselected package libxcb-shape0:amd64.
+    app: Preparing to unpack .../081-libxcb-shape0_1.13-2~ubuntu18.04_amd64.deb ...
+    app: Unpacking libxcb-shape0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Selecting previously unselected package libxcomposite1:amd64.
+    app: Preparing to unpack .../082-libxcomposite1_1%3a0.4.4-2_amd64.deb ...
+    app: Unpacking libxcomposite1:amd64 (1:0.4.4-2) ...
+    app: Selecting previously unselected package libxrandr2:amd64.
+    app: Preparing to unpack .../083-libxrandr2_2%3a1.5.1-1_amd64.deb ...
+    app: Unpacking libxrandr2:amd64 (2:1.5.1-1) ...
+    app: Selecting previously unselected package libxv1:amd64.
+    app: Preparing to unpack .../084-libxv1_2%3a1.0.11-1_amd64.deb ...
+    app: Unpacking libxv1:amd64 (2:1.0.11-1) ...
+    app: Selecting previously unselected package x11-utils.
+    app: Preparing to unpack .../085-x11-utils_7.7+3build1_amd64.deb ...
+    app: Unpacking x11-utils (7.7+3build1) ...
+    app: Selecting previously unselected package libatk-wrapper-java.
+    app: Preparing to unpack .../086-libatk-wrapper-java_0.33.3-20ubuntu0.1_all.deb ...
+    app: Unpacking libatk-wrapper-java (0.33.3-20ubuntu0.1) ...
+    app: Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+    app: Preparing to unpack .../087-libatk-wrapper-java-jni_0.33.3-20ubuntu0.1_amd64.deb ...
+    app: Unpacking libatk-wrapper-java-jni:amd64 (0.33.3-20ubuntu0.1) ...
+    app: Selecting previously unselected package libgeronimo-interceptor-3.0-spec-java.
+    app: Preparing to unpack .../088-libgeronimo-interceptor-3.0-spec-java_1.0.1-4fakesync_all.deb ...
+    app: Unpacking libgeronimo-interceptor-3.0-spec-java (1.0.1-4fakesync) ...
+    app: Selecting previously unselected package libcdi-api-java.
+    app: Preparing to unpack .../089-libcdi-api-java_1.2-2_all.deb ...
+    app: Unpacking libcdi-api-java (1.2-2) ...
+    app: Selecting previously unselected package libhtml-tagset-perl.
+    app: Preparing to unpack .../090-libhtml-tagset-perl_3.20-3_all.deb ...
+    app: Unpacking libhtml-tagset-perl (3.20-3) ...
+    app: Selecting previously unselected package liburi-perl.
+    app: Preparing to unpack .../091-liburi-perl_1.73-1_all.deb ...
+    app: Unpacking liburi-perl (1.73-1) ...
+    app: Selecting previously unselected package libhtml-parser-perl.
+    app: Preparing to unpack .../092-libhtml-parser-perl_3.72-3build1_amd64.deb ...
+    app: Unpacking libhtml-parser-perl (3.72-3build1) ...
+    app: Selecting previously unselected package libcgi-pm-perl.
+    app: Preparing to unpack .../093-libcgi-pm-perl_4.38-1_all.deb ...
+    app: Unpacking libcgi-pm-perl (4.38-1) ...
+    app: Selecting previously unselected package libfcgi-perl.
+    app: Preparing to unpack .../094-libfcgi-perl_0.78-2build1_amd64.deb ...
+    app: Unpacking libfcgi-perl (0.78-2build1) ...
+    app: Selecting previously unselected package libcgi-fast-perl.
+    app: Preparing to unpack .../095-libcgi-fast-perl_1%3a2.13-1_all.deb ...
+    app: Unpacking libcgi-fast-perl (1:2.13-1) ...
+    app: Selecting previously unselected package libcommons-cli-java.
+    app: Preparing to unpack .../096-libcommons-cli-java_1.4-1_all.deb ...
+    app: Unpacking libcommons-cli-java (1.4-1) ...
+    app: Selecting previously unselected package libcommons-parent-java.
+    app: Preparing to unpack .../097-libcommons-parent-java_43-1_all.deb ...
+    app: Unpacking libcommons-parent-java (43-1) ...
+    app: Selecting previously unselected package libcommons-io-java.
+    app: Preparing to unpack .../098-libcommons-io-java_2.6-2ubuntu0.18.04.1_all.deb ...
+    app: Unpacking libcommons-io-java (2.6-2ubuntu0.18.04.1) ...
+    app: Selecting previously unselected package libcommons-lang3-java.
+    app: Preparing to unpack .../099-libcommons-lang3-java_3.8-1~18.04.2_all.deb ...
+    app: Unpacking libcommons-lang3-java (3.8-1~18.04.2) ...
+    app: Selecting previously unselected package libeclipse-jdt-core-java.
+    app: Preparing to unpack .../100-libeclipse-jdt-core-java_3.15.0+eclipse4.9-1~18.04_all.deb ...
+    app: Unpacking libeclipse-jdt-core-java (3.15.0+eclipse4.9-1~18.04) ...
+    app: Selecting previously unselected package libencode-locale-perl.
+    app: Preparing to unpack .../101-libencode-locale-perl_1.05-1_all.deb ...
+    app: Unpacking libencode-locale-perl (1.05-1) ...
+    app: Selecting previously unselected package libflac8:amd64.
+    app: Preparing to unpack .../102-libflac8_1.3.2-1ubuntu0.1_amd64.deb ...
+    app: Unpacking libflac8:amd64 (1.3.2-1ubuntu0.1) ...
+    app: Selecting previously unselected package libgtk2.0-common.
+    app: Preparing to unpack .../103-libgtk2.0-common_2.24.32-1ubuntu1_all.deb ...
+    app: Unpacking libgtk2.0-common (2.24.32-1ubuntu1) ...
+    app: Selecting previously unselected package libxcursor1:amd64.
+    app: Preparing to unpack .../104-libxcursor1_1%3a1.1.15-1_amd64.deb ...
+    app: Unpacking libxcursor1:amd64 (1:1.1.15-1) ...
+    app: Selecting previously unselected package libgtk2.0-0:amd64.
+    app: Preparing to unpack .../105-libgtk2.0-0_2.24.32-1ubuntu1_amd64.deb ...
+    app: Unpacking libgtk2.0-0:amd64 (2.24.32-1ubuntu1) ...
+    app: Selecting previously unselected package libgail18:amd64.
+    app: Preparing to unpack .../106-libgail18_2.24.32-1ubuntu1_amd64.deb ...
+    app: Unpacking libgail18:amd64 (2.24.32-1ubuntu1) ...
+    app: Selecting previously unselected package libgail-common:amd64.
+    app: Preparing to unpack .../107-libgail-common_2.24.32-1ubuntu1_amd64.deb ...
+    app: Unpacking libgail-common:amd64 (2.24.32-1ubuntu1) ...
+    app: Selecting previously unselected package libgdk-pixbuf2.0-bin.
+    app: Preparing to unpack .../108-libgdk-pixbuf2.0-bin_2.36.11-2_amd64.deb ...
+    app: Unpacking libgdk-pixbuf2.0-bin (2.36.11-2) ...
+    app: Selecting previously unselected package libgeronimo-annotation-1.3-spec-java.
+    app: Preparing to unpack .../109-libgeronimo-annotation-1.3-spec-java_1.0-1_all.deb ...
+    app: Unpacking libgeronimo-annotation-1.3-spec-java (1.0-1) ...
+    app: Selecting previously unselected package libgif7:amd64.
+    app: Preparing to unpack .../110-libgif7_5.1.4-2ubuntu0.1_amd64.deb ...
+    app: Unpacking libgif7:amd64 (5.1.4-2ubuntu0.1) ...
+    app: Selecting previously unselected package libgtk2.0-bin.
+    app: Preparing to unpack .../111-libgtk2.0-bin_2.24.32-1ubuntu1_amd64.deb ...
+    app: Unpacking libgtk2.0-bin (2.24.32-1ubuntu1) ...
+    app: Selecting previously unselected package libjsr305-java.
+    app: Preparing to unpack .../112-libjsr305-java_0.1~+svn49-10_all.deb ...
+    app: Unpacking libjsr305-java (0.1~+svn49-10) ...
+    app: Selecting previously unselected package libguava-java.
+    app: Preparing to unpack .../113-libguava-java_19.0-1_all.deb ...
+    app: Unpacking libguava-java (19.0-1) ...
+    app: Selecting previously unselected package libaopalliance-java.
+    app: Preparing to unpack .../114-libaopalliance-java_20070526-6_all.deb ...
+    app: Unpacking libaopalliance-java (20070526-6) ...
+    app: Selecting previously unselected package libguice-java.
+    app: Preparing to unpack .../115-libguice-java_4.0-4_all.deb ...
+    app: Unpacking libguice-java (4.0-4) ...
+    app: Selecting previously unselected package libhawtjni-runtime-java.
+    app: Preparing to unpack .../116-libhawtjni-runtime-java_1.15-2_all.deb ...
+    app: Unpacking libhawtjni-runtime-java (1.15-2) ...
+    app: Selecting previously unselected package libhtml-template-perl.
+    app: Preparing to unpack .../117-libhtml-template-perl_2.97-1_all.deb ...
+    app: Unpacking libhtml-template-perl (2.97-1) ...
+    app: Selecting previously unselected package libtimedate-perl.
+    app: Preparing to unpack .../118-libtimedate-perl_2.3000-2_all.deb ...
+    app: Unpacking libtimedate-perl (2.3000-2) ...
+    app: Selecting previously unselected package libhttp-date-perl.
+    app: Preparing to unpack .../119-libhttp-date-perl_6.02-1_all.deb ...
+    app: Unpacking libhttp-date-perl (6.02-1) ...
+    app: Selecting previously unselected package libio-html-perl.
+    app: Preparing to unpack .../120-libio-html-perl_1.001-1_all.deb ...
+    app: Unpacking libio-html-perl (1.001-1) ...
+    app: Selecting previously unselected package liblwp-mediatypes-perl.
+    app: Preparing to unpack .../121-liblwp-mediatypes-perl_6.02-1_all.deb ...
+    app: Unpacking liblwp-mediatypes-perl (6.02-1) ...
+    app: Selecting previously unselected package libhttp-message-perl.
+    app: Preparing to unpack .../122-libhttp-message-perl_6.14-1_all.deb ...
+    app: Unpacking libhttp-message-perl (6.14-1) ...
+    app: Selecting previously unselected package xorg-sgml-doctools.
+    app: Preparing to unpack .../123-xorg-sgml-doctools_1%3a1.11-1_all.deb ...
+    app: Unpacking xorg-sgml-doctools (1:1.11-1) ...
+    app: Selecting previously unselected package x11proto-dev.
+    app: Preparing to unpack .../124-x11proto-dev_2018.4-4_all.deb ...
+    app: Unpacking x11proto-dev (2018.4-4) ...
+    app: Selecting previously unselected package x11proto-core-dev.
+    app: Preparing to unpack .../125-x11proto-core-dev_2018.4-4_all.deb ...
+    app: Unpacking x11proto-core-dev (2018.4-4) ...
+    app: Selecting previously unselected package libice-dev:amd64.
+    app: Preparing to unpack .../126-libice-dev_2%3a1.0.9-2ubuntu0.18.04.1_amd64.deb ...
+    app: Unpacking libice-dev:amd64 (2:1.0.9-2ubuntu0.18.04.1) ...
+    app: Selecting previously unselected package libjansi-native-java.
+    app: Preparing to unpack .../127-libjansi-native-java_1.7-1_all.deb ...
+    app: Unpacking libjansi-native-java (1.7-1) ...
+    app: Selecting previously unselected package libjansi-java.
+    app: Preparing to unpack .../128-libjansi-java_1.16-1_all.deb ...
+    app: Unpacking libjansi-java (1.16-1) ...
+    app: Selecting previously unselected package libmaven-parent-java.
+    app: Preparing to unpack .../129-libmaven-parent-java_31-2~18.04_all.deb ...
+    app: Unpacking libmaven-parent-java (31-2~18.04) ...
+    app: Selecting previously unselected package libplexus-utils2-java.
+    app: Preparing to unpack .../130-libplexus-utils2-java_3.0.24-3_all.deb ...
+    app: Unpacking libplexus-utils2-java (3.0.24-3) ...
+    app: Selecting previously unselected package libwagon-provider-api-java.
+    app: Preparing to unpack .../131-libwagon-provider-api-java_3.0.0-2_all.deb ...
+    app: Unpacking libwagon-provider-api-java (3.0.0-2) ...
+    app: Selecting previously unselected package libmaven-resolver-java.
+    app: Preparing to unpack .../132-libmaven-resolver-java_1.3.1-1~18.04_all.deb ...
+    app: Unpacking libmaven-resolver-java (1.3.1-1~18.04) ...
+    app: Selecting previously unselected package libmaven-shared-utils-java.
+    app: Preparing to unpack .../133-libmaven-shared-utils-java_3.3.0-1~18.04_all.deb ...
+    app: Unpacking libmaven-shared-utils-java (3.3.0-1~18.04) ...
+    app: Selecting previously unselected package libplexus-cipher-java.
+    app: Preparing to unpack .../134-libplexus-cipher-java_1.7-3_all.deb ...
+    app: Unpacking libplexus-cipher-java (1.7-3) ...
+    app: Selecting previously unselected package libplexus-classworlds-java.
+    app: Preparing to unpack .../135-libplexus-classworlds-java_2.5.2-2_all.deb ...
+    app: Unpacking libplexus-classworlds-java (2.5.2-2) ...
+    app: Selecting previously unselected package libplexus-component-annotations-java.
+    app: Preparing to unpack .../136-libplexus-component-annotations-java_1.7.1-7_all.deb ...
+    app: Unpacking libplexus-component-annotations-java (1.7.1-7) ...
+    app: Selecting previously unselected package libplexus-interpolation-java.
+    app: Preparing to unpack .../137-libplexus-interpolation-java_1.24-1_all.deb ...
+    app: Unpacking libplexus-interpolation-java (1.24-1) ...
+    app: Selecting previously unselected package libplexus-sec-dispatcher-java.
+    app: Preparing to unpack .../138-libplexus-sec-dispatcher-java_1.4-3_all.deb ...
+    app: Unpacking libplexus-sec-dispatcher-java (1.4-3) ...
+    app: Selecting previously unselected package libslf4j-java.
+    app: Preparing to unpack .../139-libslf4j-java_1.7.25-3_all.deb ...
+    app: Unpacking libslf4j-java (1.7.25-3) ...
+    app: Selecting previously unselected package libsisu-inject-java.
+    app: Preparing to unpack .../140-libsisu-inject-java_0.3.2-2_all.deb ...
+    app: Unpacking libsisu-inject-java (0.3.2-2) ...
+    app: Selecting previously unselected package libsisu-plexus-java.
+    app: Preparing to unpack .../141-libsisu-plexus-java_0.3.3-3_all.deb ...
+    app: Unpacking libsisu-plexus-java (0.3.3-3) ...
+    app: Selecting previously unselected package libmaven3-core-java.
+    app: Preparing to unpack .../142-libmaven3-core-java_3.6.0-1~18.04.1_all.deb ...
+    app: Unpacking libmaven3-core-java (3.6.0-1~18.04.1) ...
+    app: Selecting previously unselected package libpthread-stubs0-dev:amd64.
+    app: Preparing to unpack .../143-libpthread-stubs0-dev_0.3-4_amd64.deb ...
+    app: Unpacking libpthread-stubs0-dev:amd64 (0.3-4) ...
+    app: Selecting previously unselected package libvorbis0a:amd64.
+    app: Preparing to unpack .../144-libvorbis0a_1.3.5-4.2_amd64.deb ...
+    app: Unpacking libvorbis0a:amd64 (1.3.5-4.2) ...
+    app: Selecting previously unselected package libvorbisenc2:amd64.
+    app: Preparing to unpack .../145-libvorbisenc2_1.3.5-4.2_amd64.deb ...
+    app: Unpacking libvorbisenc2:amd64 (1.3.5-4.2) ...
+    app: Selecting previously unselected package libsndfile1:amd64.
+    app: Preparing to unpack .../146-libsndfile1_1.0.28-4ubuntu0.18.04.2_amd64.deb ...
+    app: Unpacking libsndfile1:amd64 (1.0.28-4ubuntu0.18.04.2) ...
+    app: Selecting previously unselected package libpulse0:amd64.
+    app: Preparing to unpack .../147-libpulse0_1%3a11.1-1ubuntu7.11_amd64.deb ...
+    app: Unpacking libpulse0:amd64 (1:11.1-1ubuntu7.11) ...
+    app: Selecting previously unselected package libsm-dev:amd64.
+    app: Preparing to unpack .../148-libsm-dev_2%3a1.2.2-1_amd64.deb ...
+    app: Unpacking libsm-dev:amd64 (2:1.2.2-1) ...
+    app: Selecting previously unselected package libtomcat9-java.
+    app: Preparing to unpack .../149-libtomcat9-java_9.0.16-3ubuntu0.18.04.2_all.deb ...
+    app: Unpacking libtomcat9-java (9.0.16-3ubuntu0.18.04.2) ...
+    app: Selecting previously unselected package libwagon-file-java.
+    app: Preparing to unpack .../150-libwagon-file-java_3.0.0-2_all.deb ...
+    app: Unpacking libwagon-file-java (3.0.0-2) ...
+    app: Selecting previously unselected package libwagon-http-shaded-java.
+    app: Preparing to unpack .../151-libwagon-http-shaded-java_3.0.0-2_all.deb ...
+    app: Unpacking libwagon-http-shaded-java (3.0.0-2) ...
+    app: Selecting previously unselected package libxau-dev:amd64.
+    app: Preparing to unpack .../152-libxau-dev_1%3a1.0.8-1ubuntu1_amd64.deb ...
+    app: Unpacking libxau-dev:amd64 (1:1.0.8-1ubuntu1) ...
+    app: Selecting previously unselected package libxdmcp-dev:amd64.
+    app: Preparing to unpack .../153-libxdmcp-dev_1%3a1.1.2-3_amd64.deb ...
+    app: Unpacking libxdmcp-dev:amd64 (1:1.1.2-3) ...
+    app: Selecting previously unselected package xtrans-dev.
+    app: Preparing to unpack .../154-xtrans-dev_1.3.5-1_all.deb ...
+    app: Unpacking xtrans-dev (1.3.5-1) ...
+    app: Selecting previously unselected package libxcb1-dev:amd64.
+    app: Preparing to unpack .../155-libxcb1-dev_1.13-2~ubuntu18.04_amd64.deb ...
+    app: Unpacking libxcb1-dev:amd64 (1.13-2~ubuntu18.04) ...
+    app: Selecting previously unselected package libx11-dev:amd64.
+    app: Preparing to unpack .../156-libx11-dev_2%3a1.6.4-3ubuntu0.4_amd64.deb ...
+    app: Unpacking libx11-dev:amd64 (2:1.6.4-3ubuntu0.4) ...
+    app: Selecting previously unselected package libx11-doc.
+    app: Preparing to unpack .../157-libx11-doc_2%3a1.6.4-3ubuntu0.4_all.deb ...
+    app: Unpacking libx11-doc (2:1.6.4-3ubuntu0.4) ...
+    app: Selecting previously unselected package libxt-dev:amd64.
+    app: Preparing to unpack .../158-libxt-dev_1%3a1.1.5-1_amd64.deb ...
+    app: Unpacking libxt-dev:amd64 (1:1.1.5-1) ...
+    app: Selecting previously unselected package maven.
+    app: Preparing to unpack .../159-maven_3.6.0-1~18.04.1_all.deb ...
+    app: Unpacking maven (3.6.0-1~18.04.1) ...
+    app: Selecting previously unselected package mysql-server.
+    app: Preparing to unpack .../160-mysql-server_5.7.42-0ubuntu0.18.04.1_all.deb ...
+    app: Unpacking mysql-server (5.7.42-0ubuntu0.18.04.1) ...
+    app: Selecting previously unselected package openjdk-8-jre:amd64.
+    app: Preparing to unpack .../161-openjdk-8-jre_8u372-ga~us1-0ubuntu1~18.04_amd64.deb ...
+    app: Unpacking openjdk-8-jre:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+    app: Selecting previously unselected package openjdk-8-jdk-headless:amd64.
+    app: Preparing to unpack .../162-openjdk-8-jdk-headless_8u372-ga~us1-0ubuntu1~18.04_amd64.deb ...
+    app: Unpacking openjdk-8-jdk-headless:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+    app: Selecting previously unselected package openjdk-8-jdk:amd64.
+    app: Preparing to unpack .../163-openjdk-8-jdk_8u372-ga~us1-0ubuntu1~18.04_amd64.deb ...
+    app: Unpacking openjdk-8-jdk:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+    app: Selecting previously unselected package tomcat9-common.
+    app: Preparing to unpack .../164-tomcat9-common_9.0.16-3ubuntu0.18.04.2_all.deb ...
+    app: Unpacking tomcat9-common (9.0.16-3ubuntu0.18.04.2) ...
+    app: Selecting previously unselected package tomcat9.
+    app: Preparing to unpack .../165-tomcat9_9.0.16-3ubuntu0.18.04.2_all.deb ...
+    app: Unpacking tomcat9 (9.0.16-3ubuntu0.18.04.2) ...
+    app: Selecting previously unselected package libtcnative-1:amd64.
+    app: Preparing to unpack .../166-libtcnative-1_1.2.21-1~18.04.1build1_amd64.deb ...
+    app: Unpacking libtcnative-1:amd64 (1.2.21-1~18.04.1build1) ...
+    app: Setting up libhtml-tagset-perl (3.20-3) ...
+    app: Setting up libxi6:amd64 (2:1.7.9-1) ...
+    app: Setting up libapr1:amd64 (1.6.3-2) ...
+    app: Setting up libxcb-present0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Setting up libslf4j-java (1.7.25-3) ...
+    app: Setting up libglvnd0:amd64 (1.0.0-2ubuntu2.3) ...
+    app: Setting up libeclipse-jdt-core-java (3.15.0+eclipse4.9-1~18.04) ...
+    app: Setting up libxinerama1:amd64 (2:1.1.3-1) ...
+    app: Setting up libplexus-classworlds-java (2.5.2-2) ...
+    app: Setting up libxcb-dri2-0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Setting up libxcb-dri3-0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Setting up libxcb-glx0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Setting up libgtk2.0-common (2.24.32-1ubuntu1) ...
+    app: Setting up libxcb-render0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Setting up libllvm10:amd64 (1:10.0.0-4ubuntu1~18.04.2) ...
+    app: Setting up libasyncns0:amd64 (0.8-6) ...
+    app: Setting up libevent-core-2.1-6:amd64 (2.1.8-stable-4build1) ...
+    app: Setting up libxdamage1:amd64 (1:1.1.4-3) ...
+    app: Setting up libhawtjni-runtime-java (1.15-2) ...
+    app: Setting up libxfixes3:amd64 (1:5.0.3-1) ...
+    app: Setting up libdrm-amdgpu1:amd64 (2.4.101-2~18.04.1) ...
+    app: Setting up libencode-locale-perl (1.05-1) ...
+    app: Setting up libtimedate-perl (2.3000-2) ...
+    app: Setting up liblcms2-2:amd64 (2.9-1ubuntu0.1) ...
+    app: Setting up libjbig0:amd64 (2.1-3.1ubuntu0.18.04.1) ...
+    app: Setting up libpcsclite1:amd64 (1.8.23-1) ...
+    app: Setting up libpthread-stubs0-dev:amd64 (0.3-4) ...
+    app: Setting up fonts-dejavu-core (2.37-1) ...
+    app: Setting up libplexus-cipher-java (1.7-3) ...
+    app: Setting up libatspi2.0-0:amd64 (2.28.0-1) ...
+    app: Setting up libasound2-data (1.1.3-5ubuntu0.6) ...
+    app: Setting up libxshmfence1:amd64 (1.3-1) ...
+    app: Setting up xorg-sgml-doctools (1:1.11-1) ...
+    app: Setting up libio-html-perl (1.001-1) ...
+    app: Setting up java-common (0.68ubuntu1~18.04.1) ...
+    app: Setting up libplexus-interpolation-java (1.24-1) ...
+    app: Setting up libgdk-pixbuf2.0-common (2.36.11-2) ...
+    app: Setting up libdatrie1:amd64 (0.2.10-7) ...
+    app: Setting up libgif7:amd64 (5.1.4-2ubuntu0.1) ...
+    app: Setting up libjpeg-turbo8:amd64 (1.5.2-0ubuntu5.18.04.6) ...
+    app: Setting up libglapi-mesa:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+    app: Setting up libplexus-component-annotations-java (1.7.1-7) ...
+    app: Setting up libtomcat9-java (9.0.16-3ubuntu0.18.04.2) ...
+    app: Setting up libnspr4:amd64 (2:4.18-1ubuntu1) ...
+    app: Setting up x11proto-dev (2018.4-4) ...
+    app: Setting up libplexus-utils2-java (3.0.24-3) ...
+    app: Setting up libasound2:amd64 (1.1.3-5ubuntu0.6) ...
+    app: Setting up libwagon-provider-api-java (3.0.0-2) ...
+    app: Setting up libgraphite2-3:amd64 (1.3.11-2) ...
+    app: Setting up libcroco3:amd64 (0.6.12-2) ...
+    app: Setting up libxcb-sync1:amd64 (1.13-2~ubuntu18.04) ...
+    app: Setting up libjsr305-java (0.1~+svn49-10) ...
+    app: Setting up libogg0:amd64 (1.3.2-1) ...
+    app: Setting up libatk1.0-data (2.28.1-1) ...
+    app: Setting up libx11-xcb1:amd64 (2:1.6.4-3ubuntu0.4) ...
+    app: Setting up libpixman-1-0:amd64 (0.34.0-2ubuntu0.1) ...
+    app: Setting up xtrans-dev (1.3.5-1) ...
+    app: Setting up liblwp-mediatypes-perl (6.02-1) ...
+    app: Setting up libxdmcp-dev:amd64 (1:1.1.2-3) ...
+    app: Setting up libxxf86dga1:amd64 (2:1.1.4-1) ...
+    app: Setting up libaio1:amd64 (0.3.110-5ubuntu0.1) ...
+    app: Setting up libgeronimo-interceptor-3.0-spec-java (1.0.1-4fakesync) ...
+    app: Setting up libmaven-resolver-java (1.3.1-1~18.04) ...
+    app: Setting up liburi-perl (1.73-1) ...
+    app: Setting up libatk1.0-0:amd64 (2.28.1-1) ...
+    app: Setting up libjansi-native-java (1.7-1) ...
+    app: Setting up libwagon-http-shaded-java (3.0.0-2) ...
+    app: Setting up libhtml-parser-perl (3.72-3build1) ...
+    app: Setting up libapache-pom-java (18-1) ...
+    app: Setting up libatk-bridge2.0-0:amd64 (2.26.2-1) ...
+    app: Setting up libcgi-pm-perl (4.38-1) ...
+    app: Setting up libfontenc1:amd64 (1:1.1.3-1) ...
+    app: Setting up libxcomposite1:amd64 (1:0.4.4-2) ...
+    app: Setting up libtcnative-1:amd64 (1.2.21-1~18.04.1build1) ...
+    app: Setting up libxcb-shm0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.18.04.2) ...
+    app: Setting up libx11-doc (2:1.6.4-3ubuntu0.4) ...
+    app: Setting up libxcb-shape0:amd64 (1.13-2~ubuntu18.04) ...
+    app: Setting up libpciaccess0:amd64 (0.14-1) ...
+    app: Setting up libxrender1:amd64 (1:0.9.10-1) ...
+    app: Setting up libxv1:amd64 (2:1.0.11-1) ...
+    app: Setting up libsensors4:amd64 (1:3.4.0-4ubuntu0.1) ...
+    app: Setting up libatinject-jsr330-api-java (1.0+ds1-5) ...
+    app: Setting up libmaven-parent-java (31-2~18.04) ...
+    app: Setting up libdrm-radeon1:amd64 (2.4.101-2~18.04.1) ...
+    app: Setting up libthai-data (0.1.27-2) ...
+    app: Setting up libxxf86vm1:amd64 (1:1.1.4-1) ...
+    app: Setting up libdrm-nouveau2:amd64 (2.4.101-2~18.04.1) ...
+    app: Setting up mysql-client-core-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+    app: Setting up fonts-dejavu-extra (2.37-1) ...
+    app: Setting up libvorbis0a:amd64 (1.3.5-4.2) ...
+    app: Setting up x11-common (1:7.7+19ubuntu7.1) ...
+    app: update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+    app: Setting up hicolor-icon-theme (0.17-2) ...
+    app: Setting up libfcgi-perl (0.78-2build1) ...
+    app: Setting up libaopalliance-java (20070526-6) ...
+    app: Setting up libgeronimo-annotation-1.3-spec-java (1.0-1) ...
+    app: Setting up libxrandr2:amd64 (2:1.5.1-1) ...
+    app: Setting up libcommons-cli-java (1.4-1) ...
+    app: Setting up libavahi-common-data:amd64 (0.7-3.1ubuntu1.3) ...
+    app: Setting up libplexus-sec-dispatcher-java (1.4-3) ...
+    app: Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+    app: Setting up fontconfig-config (2.12.6-0ubuntu2) ...
+    app: Setting up libhttp-date-perl (6.02-1) ...
+    app: Setting up x11proto-core-dev (2018.4-4) ...
+    app: Setting up libhtml-template-perl (2.97-1) ...
+    app: Setting up mysql-server-core-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+    app: Setting up libjansi-java (1.16-1) ...
+    app: Setting up libflac8:amd64 (1.3.2-1ubuntu0.1) ...
+    app: Setting up libguava-java (19.0-1) ...
+    app: Setting up libnss3:amd64 (2:3.35-2ubuntu2.16) ...
+    app: Setting up libharfbuzz0b:amd64 (1.7.2-1ubuntu1) ...
+    app: Setting up libtiff5:amd64 (4.0.9-5ubuntu0.10) ...
+    app: Setting up libxau-dev:amd64 (1:1.0.8-1ubuntu1) ...
+    app: Setting up libthai0:amd64 (0.1.27-2) ...
+    app: Setting up libcgi-fast-perl (1:2.13-1) ...
+    app: Setting up libxtst6:amd64 (2:1.2.3-1) ...
+    app: Setting up libwagon-file-java (3.0.0-2) ...
+    app: Setting up libcommons-parent-java (43-1) ...
+    app: Setting up libcdi-api-java (1.2-2) ...
+    app: Setting up libdrm-intel1:amd64 (2.4.101-2~18.04.1) ...
+    app: Setting up libxcursor1:amd64 (1:1.1.15-1) ...
+    app: Setting up libcommons-lang3-java (3.8-1~18.04.2) ...
+    app: Setting up libice6:amd64 (2:1.0.9-2ubuntu0.18.04.1) ...
+    app: Setting up libxcb1-dev:amd64 (1.13-2~ubuntu18.04) ...
+    app: Setting up libhttp-message-perl (6.14-1) ...
+    app: Setting up libavahi-common3:amd64 (0.7-3.1ubuntu1.3) ...
+    app: Setting up mysql-client-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+    app: Setting up libx11-dev:amd64 (2:1.6.4-3ubuntu0.4) ...
+    app: Setting up libvorbisenc2:amd64 (1.3.5-4.2) ...
+    app: Setting up libfontconfig1:amd64 (2.12.6-0ubuntu2) ...
+    app: Setting up libsm6:amd64 (2:1.2.2-1) ...
+    app: Setting up libcommons-io-java (2.6-2ubuntu0.18.04.1) ...
+    app: Setting up libguice-java (4.0-4) ...
+    app: Setting up at-spi2-core (2.28.0-1) ...
+    app: Setting up libgdk-pixbuf2.0-0:amd64 (2.36.11-2) ...
+    app: Setting up libgl1-mesa-dri:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+    app: Setting up libgdk-pixbuf2.0-bin (2.36.11-2) ...
+    app: Setting up libmaven-shared-utils-java (3.3.0-1~18.04) ...
+    app: Setting up libsndfile1:amd64 (1.0.28-4ubuntu0.18.04.2) ...
+    app: Setting up gtk-update-icon-cache (3.22.30-1ubuntu4) ...
+    app: Setting up libice-dev:amd64 (2:1.0.9-2ubuntu0.18.04.1) ...
+    app: Setting up libsisu-inject-java (0.3.2-2) ...
+    app: Setting up libxt6:amd64 (1:1.1.5-1) ...
+    app: Setting up libavahi-client3:amd64 (0.7-3.1ubuntu1.3) ...
+    app: Setting up mysql-server-5.7 (5.7.42-0ubuntu0.18.04.1) ...
+    app: update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+    app: Renaming removed key_buffer and myisam-recover options (if present)
+    app: Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib/systemd/system/mysql.service.
+    app: Setting up libxft2:amd64 (2.3.2-1) ...
+    app: Setting up fontconfig (2.12.6-0ubuntu2) ...
+    app: Regenerating fonts cache... done.
+    app: Setting up libglx-mesa0:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+    app: Setting up libcups2:amd64 (2.2.7-1ubuntu2.10) ...
+    app: Setting up libcairo2:amd64 (1.15.10-2ubuntu0.1) ...
+    app: Setting up libsm-dev:amd64 (2:1.2.2-1) ...
+    app: Setting up mysql-server (5.7.42-0ubuntu0.18.04.1) ...
+    app: Setting up libsisu-plexus-java (0.3.3-3) ...
+    app: Setting up libpulse0:amd64 (1:11.1-1ubuntu7.11) ...
+    app: Setting up libxmu6:amd64 (2:1.1.2-2) ...
+    app: Setting up libpango-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...
+    app: Setting up libglx0:amd64 (1.0.0-2ubuntu2.3) ...
+    app: Setting up libxaw7:amd64 (2:1.0.13-1) ...
+    app: Setting up libxt-dev:amd64 (1:1.1.5-1) ...
+    app: Setting up libmaven3-core-java (3.6.0-1~18.04.1) ...
+    app: Setting up libpangoft2-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...
+    app: Setting up libgl1:amd64 (1.0.0-2ubuntu2.3) ...
+    app: Setting up x11-utils (7.7+3build1) ...
+    app: Setting up libpangocairo-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...
+    app: Setting up libgl1-mesa-glx:amd64 (20.0.8-0ubuntu1~18.04.1) ...
+    app: Setting up libatk-wrapper-java (0.33.3-20ubuntu0.1) ...
+    app: Setting up librsvg2-2:amd64 (2.40.20-2ubuntu0.2) ...
+    app: Setting up librsvg2-common:amd64 (2.40.20-2ubuntu0.2) ...
+    app: Setting up libatk-wrapper-java-jni:amd64 (0.33.3-20ubuntu0.1) ...
+    app: Setting up adwaita-icon-theme (3.28.0-1ubuntu1) ...
+    app: update-alternatives: using /usr/share/icons/Adwaita/cursor.theme to provide /usr/share/icons/default/index.theme (x-cursor-theme) in auto mode
+    app: Setting up libgtk2.0-0:amd64 (2.24.32-1ubuntu1) ...
+    app: Setting up ca-certificates-java (20180516ubuntu1~18.04.2) ...
+    app: head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory
+    app: Adding debian:QuoVadis_Root_CA_2.pem
+    app: Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+    app: Adding debian:GLOBALTRUST_2020.pem
+    app: Adding debian:AffirmTrust_Premium_ECC.pem
+    app: Adding debian:Amazon_Root_CA_2.pem
+    app: Adding debian:ISRG_Root_X1.pem
+    app: Adding debian:Certum_Trusted_Network_CA.pem
+    app: Adding debian:Go_Daddy_Class_2_CA.pem
+    app: Adding debian:e-Szigno_Root_CA_2017.pem
+    app: Adding debian:QuoVadis_Root_CA_3.pem
+    app: Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+    app: Adding debian:Security_Communication_Root_CA.pem
+    app: Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+    app: Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+    app: Adding debian:E-Tugra_Global_Root_CA_RSA_v3.pem
+    app: Adding debian:Certum_Trusted_Root_CA.pem
+    app: Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068_2.pem
+    app: Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+    app: Adding debian:Atos_TrustedRoot_2011.pem
+    app: Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+    app: Adding debian:COMODO_RSA_Certification_Authority.pem
+    app: Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+    app: Adding debian:QuoVadis_Root_CA_3_G3.pem
+    app: Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+    app: Adding debian:SwissSign_Silver_CA_-_G2.pem
+    app: Adding debian:Entrust_Root_Certification_Authority.pem
+    app: Adding debian:Certainly_Root_E1.pem
+    app: Adding debian:Security_Communication_ECC_RootCA1.pem
+    app: Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+    app: Adding debian:GlobalSign_Root_CA_-_R6.pem
+    app: Adding debian:SwissSign_Gold_CA_-_G2.pem
+    app: Adding debian:UCA_Extended_Validation_Root.pem
+    app: Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+    app: Adding debian:Amazon_Root_CA_4.pem
+    app: Adding debian:DigiCert_Trusted_Root_G4.pem
+    app: Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+    app: Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+    app: Adding debian:Certainly_Root_R1.pem
+    app: Adding debian:COMODO_Certification_Authority.pem
+    app: Adding debian:Izenpe.com.pem
+    app: Adding debian:emSign_ECC_Root_CA_-_G3.pem
+    app: Adding debian:AC_RAIZ_FNMT-RCM.pem
+    app: Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+    app: Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+    app: Adding debian:HiPKI_Root_CA_-_G1.pem
+    app: Adding debian:GlobalSign_Root_CA_-_R3.pem
+    app: Adding debian:AffirmTrust_Commercial.pem
+    app: Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+    app: Adding debian:USERTrust_ECC_Certification_Authority.pem
+    app: Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+    app: Adding debian:Secure_Global_CA.pem
+    app: Adding debian:DigiCert_Assured_ID_Root_G2.pem
+    app: Adding debian:certSIGN_ROOT_CA.pem
+    app: Adding debian:TWCA_Root_Certification_Authority.pem
+    app: Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+    app: Adding debian:ACCVRAIZ1.pem
+    app: Adding debian:E-Tugra_Certification_Authority.pem
+    app: Adding debian:ANF_Secure_Server_Root_CA.pem
+    app: Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+    app: Adding debian:vTrus_Root_CA.pem
+    app: Adding debian:GTS_Root_R4.pem
+    app: Adding debian:Baltimore_CyberTrust_Root.pem
+    app: Adding debian:emSign_Root_CA_-_G1.pem
+    app: Adding debian:GTS_Root_R2.pem
+    app: Adding debian:emSign_Root_CA_-_C1.pem
+    app: Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+    app: Adding debian:Hongkong_Post_Root_CA_3.pem
+    app: Adding debian:certSIGN_Root_CA_G2.pem
+    app: Adding debian:Telia_Root_CA_v2.pem
+    app: Adding debian:DigiCert_Global_Root_CA.pem
+    app: Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+    app: Adding debian:Entrust_Root_Certification_Authority_-_G4.pem
+    app: Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+    app: Adding debian:emSign_ECC_Root_CA_-_C3.pem
+    app: Adding debian:CA_Disig_Root_R2.pem
+    app: Adding debian:AffirmTrust_Networking.pem
+    app: Adding debian:SecureTrust_CA.pem
+    app: Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+    app: Adding debian:DigiCert_Global_Root_G2.pem
+    app: Adding debian:TeliaSonera_Root_CA_v1.pem
+    app: Adding debian:Amazon_Root_CA_3.pem
+    app: Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+    app: Adding debian:GlobalSign_Root_R46.pem
+    app: Adding debian:TunTrust_Root_CA.pem
+    app: Adding debian:ISRG_Root_X2.pem
+    app: Adding debian:Security_Communication_RootCA2.pem
+    app: Adding debian:CFCA_EV_ROOT.pem
+    app: Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+    app: Adding debian:TWCA_Global_Root_CA.pem
+    app: Adding debian:DigiCert_Global_Root_G3.pem
+    app: Adding debian:ePKI_Root_Certification_Authority.pem
+    app: Adding debian:Amazon_Root_CA_1.pem
+    app: Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+    app: Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+    app: Adding debian:vTrus_ECC_Root_CA.pem
+    app: Adding debian:SecureSign_RootCA11.pem
+    app: Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+    app: Adding debian:Starfield_Class_2_CA.pem
+    app: Adding debian:Trustwave_Global_Certification_Authority.pem
+    app: Adding debian:COMODO_ECC_Certification_Authority.pem
+    app: Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+    app: Adding debian:SZAFIR_ROOT_CA2.pem
+    app: Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+    app: Adding debian:Hongkong_Post_Root_CA_1.pem
+    app: Adding debian:Certum_Trusted_Network_CA_2.pem
+    app: Adding debian:Actalis_Authentication_Root_CA.pem
+    app: Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+    app: Adding debian:DigiCert_Assured_ID_Root_CA.pem
+    app: Adding debian:AffirmTrust_Premium.pem
+    app: Adding debian:Certum_EC-384_CA.pem
+    app: Adding debian:QuoVadis_Root_CA_1_G3.pem
+    app: Adding debian:E-Tugra_Global_Root_CA_ECC_v3.pem
+    app: Adding debian:Security_Communication_RootCA3.pem
+    app: Adding debian:XRamp_Global_CA_Root.pem
+    app: Adding debian:Buypass_Class_2_Root_CA.pem
+    app: Adding debian:Buypass_Class_3_Root_CA.pem
+    app: Adding debian:GTS_Root_R3.pem
+    app: Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+    app: Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+    app: Adding debian:NAVER_Global_Root_Certification_Authority.pem
+    app: Adding debian:GTS_Root_R1.pem
+    app: Adding debian:USERTrust_RSA_Certification_Authority.pem
+    app: Adding debian:UCA_Global_G2_Root.pem
+    app: Adding debian:QuoVadis_Root_CA_2_G3.pem
+    app: Adding debian:GlobalSign_Root_E46.pem
+    app: Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+    app: Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+    app: Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+    app: Adding debian:Certigna.pem
+    app: Adding debian:Certigna_Root_CA.pem
+    app: Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+    app: Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+    app: Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+    app: Adding debian:DigiCert_Assured_ID_Root_G3.pem
+    app: Adding debian:GlobalSign_Root_CA.pem
+    app: Adding debian:Comodo_AAA_Services_root.pem
+    app: Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+    app: done.
+    app: Setting up libgail18:amd64 (2.24.32-1ubuntu1) ...
+    app: Setting up libgail-common:amd64 (2.24.32-1ubuntu1) ...
+    app: Setting up humanity-icon-theme (0.6.15) ...
+    app: Setting up libgtk2.0-bin (2.24.32-1ubuntu1) ...
+    app: Setting up ubuntu-mono (16.10+18.04.20181005-0ubuntu1) ...
+    app: Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+    app: Processing triggers for systemd (237-3ubuntu10.57) ...
+    app: Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+    app: Processing triggers for ca-certificates (20230311ubuntu0.18.04.1) ...
+    app: Updating certificates in /etc/ssl/certs...
+    app: 0 added, 0 removed; done.
+    app: Running hooks in /etc/ca-certificates/update.d...
+    app: 
+    app: done.
+    app: done.
+    app: Processing triggers for rsyslog (8.32.0-1ubuntu4.2) ...
+    app: Setting up openjdk-8-jre-headless:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java to provide /usr/bin/java (java) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+    app: Processing triggers for mime-support (3.60ubuntu1) ...
+    app: Processing triggers for ureadahead (0.100.0-21) ...
+    app: Setting up openjdk-8-jdk-headless:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/idlj to provide /usr/bin/idlj (idlj) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/wsimport to provide /usr/bin/wsimport (wsimport) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jsadebugd to provide /usr/bin/jsadebugd (jsadebugd) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/native2ascii to provide /usr/bin/native2ascii (native2ascii) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javah to provide /usr/bin/javah (javah) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/clhsdb to provide /usr/bin/clhsdb (clhsdb) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jhat to provide /usr/bin/jhat (jhat) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/extcheck to provide /usr/bin/extcheck (extcheck) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/hsdb to provide /usr/bin/hsdb (hsdb) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/schemagen to provide /usr/bin/schemagen (schemagen) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/xjc to provide /usr/bin/xjc (xjc) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/wsgen to provide /usr/bin/wsgen (wsgen) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+    app: Setting up maven (3.6.0-1~18.04.1) ...
+    app: update-alternatives: using /usr/share/maven/bin/mvn to provide /usr/bin/mvn (mvn) in auto mode
+    app: Setting up openjdk-11-jre-headless:amd64 (11.0.19+7~us1-0ubuntu1~18.04.1) ...
+    app: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+    app: Setting up tomcat9-common (9.0.16-3ubuntu0.18.04.2) ...
+    app: Setting up openjdk-8-jre:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode
+    app: Setting up default-jre-headless (2:1.11-68ubuntu1~18.04.1) ...
+    app: Setting up openjdk-8-jdk:amd64 (8u372-ga~us1-0ubuntu1~18.04) ...
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/appletviewer to provide /usr/bin/appletviewer (appletviewer) in auto mode
+    app: update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+    app: Setting up tomcat9 (9.0.16-3ubuntu0.18.04.2) ...
+    app: Creating group tomcat with gid 999.
+    app: Creating user tomcat (Apache Tomcat) with uid 999 and gid 999.
+    app: 
+    app: Creating config file /etc/tomcat9/tomcat-users.xml with new version
+    app: 
+    app: Creating config file /etc/tomcat9/web.xml with new version
+    app: 
+    app: Creating config file /etc/tomcat9/server.xml with new version
+    app: 
+    app: Creating config file /etc/tomcat9/logging.properties with new version
+    app: 
+    app: Creating config file /etc/tomcat9/context.xml with new version
+    app: 
+    app: Creating config file /etc/tomcat9/catalina.properties with new version
+    app: 
+    app: Creating config file /etc/tomcat9/jaspic-providers.xml with new version
+    app: 
+    app: Creating config file /etc/logrotate.d/tomcat9 with new version
+    app: 
+    app: Creating config file /etc/default/tomcat9 with new version
+    app: Created symlink /etc/systemd/system/multi-user.target.wants/tomcat9.service → /lib/systemd/system/tomcat9.service.
+    app: Processing triggers for libgdk-pixbuf2.0-0:amd64 (2.36.11-2) ...
+    app: Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+    app: Processing triggers for rsyslog (8.32.0-1ubuntu4.2) ...
+    app: Synchronizing state of mysql.service with SysV service script with /lib/systemd/systemd-sysv-install.
+    app: Executing: /lib/systemd/systemd-sysv-install enable mysql
+    app: Cloning into 'loja-virtual-devops'...
+    app: WARNING: An illegal reflective access operation has occurred
+    app: WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+    app: WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+    app: WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+    app: WARNING: All illegal access operations will be denied in a future release
+    app: [[1;34mINFO[m] Scanning for projects...
+    app: [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+    app: [[1;34mINFO[m] [1mReactor Build Order:[m
+    app: [[1;34mINFO[m]
+    app: [[1;34mINFO[m] loja-virtual-devops                                                [pom]
+    app: [[1;34mINFO[m] core                                                               [jar]
+    app: [[1;34mINFO[m] admin                                                              [war]
+    app: [[1;34mINFO[m] site                                                               [war]
+    app: [[1;34mINFO[m] combined                                                           [war]
+    app: [[1;34mINFO[m]
+    app: [[1;34mINFO[m] [1m-------------< [0;36mbr.com.devopsnapratica:lojavirtual-website[0;1m >-------------[m
+    app: [[1;34mINFO[m] [1mBuilding loja-virtual-devops 1.0                                   [1/5][m
+    app: [[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+    app: Progress (1): 802 BProgress (1): 1.8 kBProgress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom (3.9 kB at 5.6 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+    app: Progress (1): 748 BProgress (1): 1.7 kBProgress (1): 5.8 kBProgress (1): 7.6 kBProgress (1): 9.3 kBProgress (1): 12 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom (13 kB at 70 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom
+    app: Progress (1): 740 BProgress (1): 1.6 kBProgress (1): 4.9 kBProgress (1): 9.0 kBProgress (1): 9.4 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 18 kBProgress (1): 20 kBProgress (1): 24 kBProgress (1): 26 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom (26 kB at 142 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom
+    app: Progress (1): 753 BProgress (1): 1.6 kBProgress (1): 3.6 kBProgress (1): 7.3 kBProgress (1): 10.0 kBProgress (1): 13 kB  Progress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom (15 kB at 80 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+    app: Progress (1): 0.9/25 kBProgress (1): 2.3/25 kBProgress (1): 3.6/25 kBProgress (1): 5.0/25 kBProgress (1): 6.4/25 kBProgress (1): 7.7/25 kBProgress (1): 9.1/25 kBProgress (1): 10/25 kB Progress (1): 12/25 kBProgress (1): 13/25 kBProgress (1): 15/25 kBProgress (1): 16/25 kBProgress (1): 17/25 kBProgress (1): 19/25 kBProgress (1): 20/25 kBProgress (1): 21/25 kBProgress (1): 23/25 kBProgress (1): 24/25 kBProgress (1): 25 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar (25 kB at 107 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom
+    app: Progress (1): 774 BProgress (1): 1.7 kBProgress (1): 4.8 kBProgress (1): 6.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom (6.4 kB at 32 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom
+    app: Progress (1): 758 BProgress (1): 2.3 kBProgress (1): 4.5 kBProgress (1): 7.2 kBProgress (1): 9.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom (9.2 kB at 49 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/22/maven-parent-22.pom
+    app: Progress (1): 733 BProgress (1): 2.0 kBProgress (1): 6.1 kBProgress (1): 6.1 kBProgress (1): 10 kB Progress (1): 11 kBProgress (1): 15 kBProgress (1): 15 kBProgress (1): 19 kBProgress (1): 22 kBProgress (1): 22 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 29 kBProgress (1): 30 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/22/maven-parent-22.pom (30 kB at 141 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/11/apache-11.pom
+    app: Progress (1): 749 BProgress (1): 2.1 kBProgress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 8.8 kBProgress (1): 12 kB Progress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/11/apache-11.pom (15 kB at 55 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar
+    app: Progress (1): 3.8/27 kBProgress (1): 7.8/27 kBProgress (1): 8.0/27 kBProgress (1): 11/27 kB Progress (1): 15/27 kBProgress (1): 16/27 kBProgress (1): 20/27 kBProgress (1): 20/27 kBProgress (1): 24/27 kBProgress (1): 24/27 kBProgress (1): 27 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar (27 kB at 135 kB/s)
+    app: [[1;34mINFO[m]
+    app: [[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mlojavirtual-website[0;1m ---[m
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
+    app: Progress (1): 847 BProgress (1): 1.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom (1.5 kB at 7.4 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
+    app: Progress (1): 782 BProgress (1): 2.0 kBProgress (1): 4.4 kBProgress (1): 8.5 kBProgress (1): 9.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom (9.0 kB at 45 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom
+    app: Progress (1): 755 BProgress (1): 2.1 kBProgress (1): 5.4 kBProgress (1): 9.1 kBProgress (1): 12 kB Progress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom (15 kB at 74 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom
+    app: Progress (1): 812 BProgress (1): 2.3 kBProgress (1): 3.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom (3.4 kB at 16 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+    app: Progress (1): 811 BProgress (1): 2.3 kBProgress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4.1 kB at 17 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+    app: Progress (1): 1.2 kBProgress (1): 3.7 kBProgress (1): 7.3 kBProgress (1): 8.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom (8.4 kB at 37 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+    app: Progress (1): 1.3 kBProgress (1): 5.4 kBProgress (1): 5.5 kBProgress (1): 8.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (8.4 kB at 53 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+    app: Progress (1): 4.1/13 kBProgress (1): 7.7/13 kBProgress (1): 12/13 kB Progress (1): 13 kB   Progress (2): 13 kB | 0.9/226 kBProgress (2): 13 kB | 2.3/226 kBProgress (2): 13 kB | 3.6/226 kBProgress (2): 13 kB | 5.0/226 kBProgress (2): 13 kB | 6.4/226 kBProgress (2): 13 kB | 7.7/226 kBProgress (2): 13 kB | 9.1/226 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 kB at 65 kB/s)
+    app: Progress (1): 10/226 kBProgress (1): 12/226 kBProgress (1): 13/226 kBProgress (1): 15/226 kBProgress (1): 16/226 kBProgress (1): 17/226 kBProgress (1): 19/226 kBProgress (1): 20/226 kBProgress (1): 21/226 kBProgress (1): 23/226 kBProgress (1): 24/226 kBProgress (1): 26/226 kBProgress (1): 27/226 kBProgress (1): 28/226 kBProgress (1): 30/226 kBProgress (1): 31/226 kBProgress (1): 32/226 kBProgress (1): 34/226 kBProgress (1): 35/226 kBProgress (1): 36/226 kBProgress (1): 38/226 kBProgress (1): 39/226 kBProgress (1): 41/226 kBProgress (1): 42/226 kBProgress (1): 43/226 kBProgress (1): 45/226 kBProgress (1): 46/226 kBProgress (1): 47/226 kBProgress (1): 49/226 kBProgress (1): 50/226 kBProgress (1): 52/226 kBProgress (1): 53/226 kBProgress (1): 54/226 kBProgress (1): 56/226 kBProgress (1): 60/226 kBProgress (1): 60/226 kBProgress (1): 64/226 kBProgress (1): 64/226 kBProgress (1): 68/226 kBProgress (1): 68/226 kBProgress (1): 72/226 kBProgress (1): 73/226 kBProgress (1): 77/226 kBProgress (1): 77/226 kBProgress (1): 81/226 kBProgress (1): 81/226 kBProgress (1): 85/226 kBProgress (1): 85/226 kBProgress (1): 89/226 kBProgress (1): 89/226 kBProgress (1): 94/226 kBProgress (1): 94/226 kBProgress (1): 98/226 kBProgress (1): 98/226 kBProgress (1): 102/226 kBProgress (1): 102/226 kBProgress (1): 106/226 kBProgress (1): 106/226 kBProgress (1): 110/226 kBProgress (1): 111/226 kBProgress (1): 115/226 kBProgress (1): 119/226 kBProgress (1): 119/226 kBProgress (1): 123/226 kBProgress (1): 123/226 kBProgress (1): 127/226 kBProgress (1): 127/226 kBProgress (1): 131/226 kBProgress (1): 132/226 kBProgress (1): 136/226 kBProgress (1): 136/226 kBProgress (1): 139/226 kBProgress (1): 143/226 kBProgress (1): 143/226 kBProgress (1): 148/226 kBProgress (1): 148/226 kBProgress (1): 152/226 kBProgress (1): 152/226 kBProgress (1): 156/226 kBProgress (1): 156/226 kBProgress (1): 160/226 kBProgress (1): 160/226 kBProgress (1): 165/226 kBProgress (1): 165/226 kBProgress (1): 169/226 kBProgress (1): 169/226 kBProgress (1): 173/226 kBProgress (1): 173/226 kBProgress (1): 177/226 kBProgress (1): 177/226 kBProgress (1): 181/226 kBProgress (1): 182/226 kBProgress (1): 186/226 kBProgress (1): 186/226 kBProgress (1): 190/226 kBProgress (1): 190/226 kBProgress (1): 194/226 kBProgress (1): 194/226 kBProgress (1): 198/226 kBProgress (1): 198/226 kBProgress (1): 203/226 kBProgress (1): 203/226 kBProgress (1): 207/226 kBProgress (1): 207/226 kBProgress (1): 211/226 kBProgress (1): 211/226 kBProgress (1): 215/226 kBProgress (1): 215/226 kBProgress (1): 219/226 kBProgress (1): 220/226 kBProgress (1): 224/226 kBProgress (1): 224/226 kBProgress (1): 226 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (226 kB at 528 kB/s)
+    app: [[1;34mINFO[m]
+    app: [[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mlojavirtual-website[0;1m ---[m
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
+    app: Progress (1): 823 BProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom (2.6 kB at 10 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom
+    app: Progress (1): 830 BProgress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom (2.0 kB at 8.9 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom
+    app: Progress (1): 814 BProgress (1): 3.0 kBProgress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom (3.0 kB at 14 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom
+    app: Progress (1): 1.2 kBProgress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom (1.9 kB at 9.3 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+    app: Progress (1): 1.2 kBProgress (1): 4.4 kBProgress (1): 7.6 kBProgress (1): 9.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom (9.0 kB at 41 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+    app: Progress (1): 2.1 kBProgress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom (3.9 kB at 20 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+    app: Progress (1): 492 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom (492 B at 2.6 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+    app: Progress (1): 1.5 kBProgress (1): 4.6 kBProgress (1): 5.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom (5.7 kB at 27 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
+    app: Progress (1): 998 B                   Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom (998 B at 5.2 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom
+    app: Progress (1): 1.5 kBProgress (1): 4.4 kBProgress (1): 6.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom (6.9 kB at 35 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+    app: Progress (1): 2.0 kBProgress (1): 3.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom (3.1 kB at 15 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom
+    app: Progress (1): 830 BProgress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom (2.0 kB at 8.1 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
+    app: Progress (1): 816 BProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom (2.6 kB at 11 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom
+    app: Progress (1): 832 BProgress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom (1.9 kB at 9.2 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom
+    app: Progress (1): 835 BProgress (1): 1.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom (1.6 kB at 8.6 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom
+    app: Progress (1): 830 BProgress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom (1.9 kB at 11 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom
+    app: Progress (1): 829 BProgress (1): 2.3 kBProgress (1): 2.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom (2.5 kB at 14 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom
+    app: Progress (1): 705 BProgress (1): 2.6 kBProgress (1): 6.1 kBProgress (1): 8.8 kBProgress (1): 13 kB Progress (1): 17 kBProgress (1): 17 kBProgress (1): 19 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom (19 kB at 93 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+    app: Progress (1): 1.2 kBProgress (1): 3.4 kBProgress (1): 6.7 kBProgress (1): 6.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (6.8 kB at 32 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+    app: Progress (1): 735 BProgress (1): 2.6 kBProgress (1): 6.7 kBProgress (1): 8.6 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 kB at 72 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+    app: Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom (1.1 kB at 5.7 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+    app: Progress (1): 1.5 kBProgress (1): 5.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom (5.0 kB at 25 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom
+    app: Progress (1): 1.2 kBProgress (1): 4.2 kBProgress (1): 6.8 kBProgress (1): 7.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom (7.2 kB at 36 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+    app: Progress (1): 1.4 kBProgress (1): 4.4 kBProgress (1): 7.2 kBProgress (1): 7.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom (7.3 kB at 35 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar
+    app: Progress (1): 4.1/35 kBProgress (1): 7.7/35 kBProgress (1): 12/35 kB Progress (1): 16/35 kBProgress (1): 20/35 kBProgress (1): 24/35 kBProgress (1): 28/35 kBProgress (1): 32/35 kBProgress (1): 33/35 kBProgress (1): 35 kB   Progress (2): 35 kB | 3.2/116 kBProgress (2): 35 kB | 7.3/116 kBProgress (2): 35 kB | 11/116 kB Progress (2): 35 kB | 15/116 kBProgress (2): 35 kB | 20/116 kBProgress (2): 35 kB | 24/116 kBProgress (2): 35 kB | 28/116 kBProgress (2): 35 kB | 32/116 kBProgress (2): 35 kB | 36/116 kBProgress (2): 35 kB | 40/116 kBProgress (2): 35 kB | 44/116 kBProgress (2): 35 kB | 48/116 kBProgress (2): 35 kB | 52/116 kBProgress (2): 35 kB | 56/116 kBProgress (2): 35 kB | 61/116 kBProgress (2): 35 kB | 65/116 kBProgress (2): 35 kB | 69/116 kBProgress (2): 35 kB | 73/116 kBProgress (2): 35 kB | 77/116 kBProgress (2): 35 kB | 81/116 kBProgress (2): 35 kB | 85/116 kBProgress (2): 35 kB | 89/116 kBProgress (2): 35 kB | 93/116 kBProgress (2): 35 kB | 97/116 kBProgress (2): 35 kB | 102/116 kBProgress (2): 35 kB | 106/116 kBProgress (2): 35 kB | 110/116 kBProgress (2): 35 kB | 114/116 kBProgress (2): 35 kB | 116 kB    Progress (3): 35 kB | 116 kB | 0.9/29 kBProgress (3): 35 kB | 116 kB | 2.3/29 kBProgress (3): 35 kB | 116 kB | 3.6/29 kBProgress (3): 35 kB | 116 kB | 5.0/29 kBProgress (3): 35 kB | 116 kB | 6.4/29 kBProgress (3): 35 kB | 116 kB | 7.7/29 kBProgress (3): 35 kB | 116 kB | 9.1/29 kBProgress (3): 35 kB | 116 kB | 10/29 kB Progress (3): 35 kB | 116 kB | 12/29 kBProgress (3): 35 kB | 116 kB | 13/29 kBProgress (3): 35 kB | 116 kB | 15/29 kBProgress (3): 35 kB | 116 kB | 16/29 kBProgress (3): 35 kB | 116 kB | 17/29 kBProgress (3): 35 kB | 116 kB | 19/29 kBProgress (3): 35 kB | 116 kB | 20/29 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 0.9/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 2.3/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 3.6/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 5.0/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 6.4/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 7.7/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 9.1/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 10/49 kB Progress (4): 35 kB | 116 kB | 20/29 kB | 12/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 13/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 15/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 16/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 17/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 19/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 20/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 21/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 23/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 24/49 kBProgress (4): 35 kB | 116 kB | 20/29 kB | 25/49 kBProgress (4): 35 kB | 116 kB | 21/29 kB | 25/49 kBProgress (4): 35 kB | 116 kB | 23/29 kB | 25/49 kBProgress (4): 35 kB | 116 kB | 24/29 kB | 25/49 kBProgress (4): 35 kB | 116 kB | 26/29 kB | 25/49 kBProgress (4): 35 kB | 116 kB | 27/29 kB | 25/49 kBProgress (4): 35 kB | 116 kB | 28/29 kB | 25/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 25/49 kB   Progress (4): 35 kB | 116 kB | 29 kB | 26/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 27/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 29/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 30/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 31/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 33/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 34/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 36/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 37/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 38/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 40/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 41/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 42/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 44/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 45/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 46/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 48/49 kBProgress (4): 35 kB | 116 kB | 29 kB | 49 kB   Progress (5): 35 kB | 116 kB | 29 kB | 49 kB | 0.9/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 2.3/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 3.6/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 5.0/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 6.4/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 7.7/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 9.1/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 10/194 kB Progress (5): 35 kB | 116 kB | 29 kB | 49 kB | 12/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 13/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 15/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 16/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 17/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 19/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 20/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 21/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 23/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 24/194 kB
+    app: Progress (5): 35 kB | 116 kB | 29 kB | 49 kB | 25/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 27/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 28/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 30/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 31/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 32/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 34/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 35/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 36/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 38/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 39/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 41/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 42/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 43/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 45/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 46/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 47/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 49/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 50/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 51/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 53/194 kBProgress (5): 35 kB | 116 kB | 29 kB | 49 kB | 54/194 kB                                                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar (35 kB at 178 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+    app: Progress (4): 116 kB | 29 kB | 49 kB | 56/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 60/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 60/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 64/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 64/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 68/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 68/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 72/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 73/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 77/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 77/194 kBProgress (4): 116 kB | 29 kB | 49 kB | 81/194 kB                                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar (116 kB at 543 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
+    app: Progress (3): 29 kB | 49 kB | 81/194 kBProgress (3): 29 kB | 49 kB | 85/194 kBProgress (3): 29 kB | 49 kB | 85/194 kBProgress (3): 29 kB | 49 kB | 89/194 kBProgress (3): 29 kB | 49 kB | 89/194 kBProgress (3): 29 kB | 49 kB | 94/194 kBProgress (3): 29 kB | 49 kB | 94/194 kBProgress (3): 29 kB | 49 kB | 98/194 kBProgress (3): 29 kB | 49 kB | 98/194 kBProgress (3): 29 kB | 49 kB | 102/194 kBProgress (3): 29 kB | 49 kB | 102/194 kBProgress (3): 29 kB | 49 kB | 106/194 kBProgress (3): 29 kB | 49 kB | 106/194 kBProgress (3): 29 kB | 49 kB | 110/194 kBProgress (3): 29 kB | 49 kB | 111/194 kBProgress (3): 29 kB | 49 kB | 115/194 kBProgress (3): 29 kB | 49 kB | 115/194 kBProgress (3): 29 kB | 49 kB | 119/194 kBProgress (3): 29 kB | 49 kB | 119/194 kBProgress (3): 29 kB | 49 kB | 123/194 kBProgress (3): 29 kB | 49 kB | 123/194 kBProgress (3): 29 kB | 49 kB | 127/194 kBProgress (3): 29 kB | 49 kB | 127/194 kBProgress (3): 29 kB | 49 kB | 132/194 kBProgress (3): 29 kB | 49 kB | 132/194 kBProgress (3): 29 kB | 49 kB | 136/194 kBProgress (3): 29 kB | 49 kB | 136/194 kBProgress (3): 29 kB | 49 kB | 140/194 kBProgress (3): 29 kB | 49 kB | 140/194 kBProgress (3): 29 kB | 49 kB | 144/194 kBProgress (3): 29 kB | 49 kB | 144/194 kBProgress (3): 29 kB | 49 kB | 149/194 kBProgress (3): 29 kB | 49 kB | 149/194 kBProgress (3): 29 kB | 49 kB | 153/194 kBProgress (3): 29 kB | 49 kB | 153/194 kBProgress (3): 29 kB | 49 kB | 155/194 kBProgress (3): 29 kB | 49 kB | 159/194 kBProgress (3): 29 kB | 49 kB | 159/194 kBProgress (3): 29 kB | 49 kB | 164/194 kBProgress (3): 29 kB | 49 kB | 164/194 kBProgress (3): 29 kB | 49 kB | 168/194 kBProgress (3): 29 kB | 49 kB | 168/194 kB                                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar (29 kB at 114 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar
+    app: Progress (2): 49 kB | 172/194 kBProgress (2): 49 kB | 172/194 kBProgress (2): 49 kB | 176/194 kBProgress (2): 49 kB | 176/194 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar (49 kB at 187 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
+    app: Progress (1): 180/194 kBProgress (1): 181/194 kBProgress (1): 185/194 kBProgress (1): 185/194 kBProgress (1): 189/194 kBProgress (1): 189/194 kBProgress (1): 193/194 kBProgress (1): 193/194 kBProgress (1): 194 kB    Progress (2): 194 kB | 4.1/121 kBProgress (2): 194 kB | 7.7/121 kBProgress (2): 194 kB | 12/121 kB Progress (2): 194 kB | 16/121 kBProgress (2): 194 kB | 20/121 kBProgress (2): 194 kB | 24/121 kBProgress (2): 194 kB | 28/121 kBProgress (2): 194 kB | 32/121 kBProgress (2): 194 kB | 36/121 kBProgress (2): 194 kB | 40/121 kBProgress (2): 194 kB | 45/121 kBProgress (2): 194 kB | 49/121 kBProgress (2): 194 kB | 53/121 kBProgress (2): 194 kB | 57/121 kBProgress (2): 194 kB | 57/121 kBProgress (3): 194 kB | 57/121 kB | 4.1/38 kBProgress (3): 194 kB | 57/121 kB | 7.7/38 kBProgress (3): 194 kB | 57/121 kB | 12/38 kB Progress (3): 194 kB | 57/121 kB | 16/38 kBProgress (3): 194 kB | 57/121 kB | 20/38 kBProgress (3): 194 kB | 57/121 kB | 24/38 kBProgress (3): 194 kB | 57/121 kB | 28/38 kBProgress (3): 194 kB | 57/121 kB | 32/38 kBProgress (3): 194 kB | 57/121 kB | 36/38 kBProgress (3): 194 kB | 57/121 kB | 38 kB   Progress (3): 194 kB | 61/121 kB | 38 kBProgress (3): 194 kB | 65/121 kB | 38 kBProgress (3): 194 kB | 69/121 kB | 38 kBProgress (3): 194 kB | 73/121 kB | 38 kBProgress (3): 194 kB | 77/121 kB | 38 kBProgress (3): 194 kB | 81/121 kB | 38 kBProgress (3): 194 kB | 86/121 kB | 38 kBProgress (3): 194 kB | 90/121 kB | 38 kBProgress (3): 194 kB | 94/121 kB | 38 kBProgress (3): 194 kB | 98/121 kB | 38 kBProgress (3): 194 kB | 102/121 kB | 38 kBProgress (3): 194 kB | 106/121 kB | 38 kBProgress (3): 194 kB | 110/121 kB | 38 kBProgress (3): 194 kB | 114/121 kB | 38 kBProgress (3): 194 kB | 118/121 kB | 38 kBProgress (3): 194 kB | 121 kB | 38 kB    Progress (4): 194 kB | 121 kB | 38 kB | 0.9/86 kBProgress (4): 194 kB | 121 kB | 38 kB | 2.3/86 kBProgress (4): 194 kB | 121 kB | 38 kB | 3.6/86 kBProgress (5): 194 kB | 121 kB | 38 kB | 3.6/86 kB | 0.9/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 3.6/86 kB | 2.3/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 5.0/86 kB | 2.3/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 6.4/86 kB | 2.3/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 7.7/86 kB | 2.3/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 9.1/86 kB | 2.3/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 9.1/86 kB | 3.6/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 9.1/86 kB | 7.7/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 9.1/86 kB | 7.9/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 9.1/86 kB | 12/57 kB Progress (5): 194 kB | 121 kB | 38 kB | 9.1/86 kB | 12/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 9.1/86 kB | 16/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 9.1/86 kB | 16/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 10/86 kB | 16/57 kB Progress (5): 194 kB | 121 kB | 38 kB | 12/86 kB | 16/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 13/86 kB | 16/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 15/86 kB | 16/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 16/86 kB | 16/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 17/86 kB | 16/57 kBProgress (5): 194 kB | 121 kB | 38 kB | 19/86 kB | 16/57 kB                                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar (194 kB at 528 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar
+    app: Progress (4): 121 kB | 38 kB | 19/86 kB | 20/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 21/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 24/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 28/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 28/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 32/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 33/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 37/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 37/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 41/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 41/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 45/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 45/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 49/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 49/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 19/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 20/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 21/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 23/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 24/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 28/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 32/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 32/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 36/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 36/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 40/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 40/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 45/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 45/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 49/86 kB | 54/57 kBProgress (4): 121 kB | 38 kB | 49/86 kB | 57 kB   Progress (4): 121 kB | 38 kB | 49/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 53/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 53/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 57/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 57/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 61/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 62/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 66/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 66/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 70/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 70/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 74/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 74/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 78/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 78/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 83/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 83/86 kB | 57 kBProgress (4): 121 kB | 38 kB | 86 kB | 57 kB                                               Downloaded from central: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar (38 kB at 92 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar
+    app: Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar (121 kB at 288 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar
+    app: Progress (3): 86 kB | 57 kB | 3.8/24 kBProgress (3): 86 kB | 57 kB | 7.8/24 kBProgress (3): 86 kB | 57 kB | 8.0/24 kBProgress (3): 86 kB | 57 kB | 12/24 kB Progress (3): 86 kB | 57 kB | 12/24 kBProgress (3): 86 kB | 57 kB | 16/24 kBProgress (3): 86 kB | 57 kB | 16/24 kB                                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar (57 kB at 120 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+    app: Progress (2): 86 kB | 21/24 kBProgress (2): 86 kB | 21/24 kBProgress (2): 86 kB | 24 kB                              Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar (86 kB at 175 kB/s)
+    app: Progress (2): 24 kB | 4.1/87 kBProgress (2): 24 kB | 7.7/87 kBProgress (2): 24 kB | 11/87 kB Progress (2): 24 kB | 15/87 kBProgress (2): 24 kB | 20/87 kBProgress (2): 24 kB | 24/87 kBProgress (2): 24 kB | 28/87 kBProgress (2): 24 kB | 32/87 kBProgress (2): 24 kB | 36/87 kBProgress (2): 24 kB | 40/87 kBProgress (2): 24 kB | 44/87 kBProgress (2): 24 kB | 48/87 kBProgress (2): 24 kB | 52/87 kBProgress (2): 24 kB | 56/87 kBProgress (2): 24 kB | 61/87 kBProgress (2): 24 kB | 65/87 kBProgress (2): 24 kB | 69/87 kBProgress (2): 24 kB | 73/87 kBProgress (2): 24 kB | 77/87 kBProgress (2): 24 kB | 81/87 kBProgress (2): 24 kB | 85/87 kBProgress (2): 24 kB | 87 kB   Progress (3): 24 kB | 87 kB | 4.1/230 kBProgress (3): 24 kB | 87 kB | 7.7/230 kBProgress (3): 24 kB | 87 kB | 12/230 kB Progress (3): 24 kB | 87 kB | 16/230 kBProgress (3): 24 kB | 87 kB | 20/230 kBProgress (3): 24 kB | 87 kB | 24/230 kBProgress (3): 24 kB | 87 kB | 28/230 kBProgress (3): 24 kB | 87 kB | 32/230 kBProgress (3): 24 kB | 87 kB | 36/230 kBProgress (3): 24 kB | 87 kB | 40/230 kBProgress (3): 24 kB | 87 kB | 45/230 kBProgress (3): 24 kB | 87 kB | 49/230 kBProgress (3): 24 kB | 87 kB | 53/230 kBProgress (3): 24 kB | 87 kB | 57/230 kBProgress (3): 24 kB | 87 kB | 61/230 kBProgress (3): 24 kB | 87 kB | 65/230 kBProgress (3): 24 kB | 87 kB | 69/230 kBProgress (3): 24 kB | 87 kB | 73/230 kBProgress (3): 24 kB | 87 kB | 77/230 kBProgress (3): 24 kB | 87 kB | 81/230 kBProgress (3): 24 kB | 87 kB | 86/230 kBProgress (3): 24 kB | 87 kB | 90/230 kBProgress (3): 24 kB | 87 kB | 94/230 kBProgress (3): 24 kB | 87 kB | 98/230 kBProgress (3): 24 kB | 87 kB | 102/230 kBProgress (3): 24 kB | 87 kB | 106/230 kBProgress (3): 24 kB | 87 kB | 110/230 kBProgress (3): 24 kB | 87 kB | 114/230 kBProgress (3): 24 kB | 87 kB | 118/230 kBProgress (3): 24 kB | 87 kB | 122/230 kBProgress (3): 24 kB | 87 kB | 126/230 kBProgress (3): 24 kB | 87 kB | 131/230 kBProgress (3): 24 kB | 87 kB | 135/230 kBProgress (3): 24 kB | 87 kB | 139/230 kBProgress (3): 24 kB | 87 kB | 143/230 kBProgress (3): 24 kB | 87 kB | 147/230 kBProgress (3): 24 kB | 87 kB | 151/230 kBProgress (3): 24 kB | 87 kB | 155/230 kBProgress (3): 24 kB | 87 kB | 159/230 kBProgress (3): 24 kB | 87 kB | 163/230 kBProgress (3): 24 kB | 87 kB | 167/230 kBProgress (3): 24 kB | 87 kB | 172/230 kBProgress (3): 24 kB | 87 kB | 176/230 kBProgress (3): 24 kB | 87 kB | 180/230 kBProgress (3): 24 kB | 87 kB | 184/230 kBProgress (3): 24 kB | 87 kB | 188/230 kBProgress (3): 24 kB | 87 kB | 192/230 kBProgress (3): 24 kB | 87 kB | 196/230 kBProgress (3): 24 kB | 87 kB | 200/230 kBProgress (3): 24 kB | 87 kB | 204/230 kBProgress (3): 24 kB | 87 kB | 208/230 kBProgress (3): 24 kB | 87 kB | 212/230 kBProgress (3): 24 kB | 87 kB | 217/230 kBProgress (3): 24 kB | 87 kB | 221/230 kBProgress (3): 24 kB | 87 kB | 225/230 kBProgress (3): 24 kB | 87 kB | 229/230 kBProgress (3): 24 kB | 87 kB | 230 kB    Progress (4): 24 kB | 87 kB | 230 kB | 3.8/12 kBProgress (4): 24 kB | 87 kB | 230 kB | 7.8/12 kBProgress (4): 24 kB | 87 kB | 230 kB | 8.0/12 kBProgress (4): 24 kB | 87 kB | 230 kB | 8.2/12 kBProgress (4): 24 kB | 87 kB | 230 kB | 12 kB                                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar (24 kB at 42 kB/s)
+    app: Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar (87 kB at 140 kB/s)
+    app: Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar (230 kB at 353 kB/s)
+    app: Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar (12 kB at 17 kB/s)
+    app: [[1;34mINFO[m] Installing /home/vagrant/loja-virtual-devops/pom.xml to /root/.m2/repository/br/com/devopsnapratica/lojavirtual-website/1.0/lojavirtual-website-1.0.pom
+    app: [[1;34mINFO[m]
+    app: [[1;34mINFO[m] [1m--------------------< [0;36mbr.com.devopsnapratica:core[0;1m >---------------------[m
+    app: [[1;34mINFO[m] [1mBuilding core 1.0                                                  [2/5][m
+    app: [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom
+    app: Progress (1): 773 BProgress (1): 2.1 kBProgress (1): 5.7 kBProgress (1): 8.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom (8.1 kB at 39 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar
+    app: Progress (1): 3.8/30 kBProgress (1): 7.8/30 kBProgress (1): 8.0/30 kBProgress (1): 12/30 kB Progress (1): 12/30 kBProgress (1): 16/30 kBProgress (1): 16/30 kBProgress (1): 21/30 kBProgress (1): 21/30 kBProgress (1): 25/30 kBProgress (1): 25/30 kBProgress (1): 28/30 kBProgress (1): 30 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar (30 kB at 143 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/zeroturnaround/jrebel-maven-plugin/1.1.3/jrebel-maven-plugin-1.1.3.pom
+    app: Progress (1): 1.1 kBProgress (1): 3.7 kBProgress (1): 5.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/zeroturnaround/jrebel-maven-plugin/1.1.3/jrebel-maven-plugin-1.1.3.pom (5.0 kB at 12 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/zeroturnaround/jrebel-maven-plugin/1.1.3/jrebel-maven-plugin-1.1.3.jar
+    app: Progress (1): 3.8/21 kBProgress (1): 7.7/21 kBProgress (1): 12/21 kB Progress (1): 12/21 kBProgress (1): 16/21 kBProgress (1): 16/21 kBProgress (1): 20/21 kBProgress (1): 20/21 kBProgress (1): 21 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/zeroturnaround/jrebel-maven-plugin/1.1.3/jrebel-maven-plugin-1.1.3.jar (21 kB at 101 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.pom
+    app: Progress (1): 2.0 kBProgress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.pom (2.4 kB at 11 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/8/maven-plugins-8.pom
+    app: Progress (1): 1.6 kBProgress (1): 5.0 kBProgress (1): 6.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/8/maven-plugins-8.pom (6.1 kB at 28 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar
+    app: Progress (1): 4.1/18 kBProgress (1): 7.7/18 kBProgress (1): 12/18 kB Progress (1): 16/18 kBProgress (1): 18 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.0.2/maven-compiler-plugin-2.0.2.jar (18 kB at 93 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.10/maven-surefire-plugin-2.10.pom
+    app: Progress (1): 801 BProgress (1): 2.3 kBProgress (1): 6.4 kBProgress (1): 7.0 kBProgress (1): 10 kB Progress (1): 11 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.10/maven-surefire-plugin-2.10.pom (11 kB at 58 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.10/surefire-2.10.pom
+    app: Progress (1): 830 BProgress (1): 2.3 kBProgress (1): 5.9 kBProgress (1): 9.9 kBProgress (1): 12 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.10/surefire-2.10.pom (12 kB at 57 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/20/maven-parent-20.pom
+    app: Progress (1): 743 BProgress (1): 1.9 kBProgress (1): 6.0 kBProgress (1): 6.3 kBProgress (1): 10 kB Progress (1): 11 kBProgress (1): 15 kBProgress (1): 17 kBProgress (1): 19 kBProgress (1): 23 kBProgress (1): 23 kBProgress (1): 25 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/20/maven-parent-20.pom (25 kB at 113 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
+    app: Progress (1): 753 BProgress (1): 2.0 kBProgress (1): 3.7 kBProgress (1): 7.1 kBProgress (1): 11 kB Progress (1): 11 kBProgress (1): 14 kBProgress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom (15 kB at 78 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.10/maven-surefire-plugin-2.10.jar
+    app: Progress (1): 4.1/30 kBProgress (1): 7.7/30 kBProgress (1): 12/30 kB Progress (1): 16/30 kBProgress (1): 20/30 kBProgress (1): 24/30 kBProgress (1): 25/30 kBProgress (1): 29/30 kBProgress (1): 30 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.10/maven-surefire-plugin-2.10.jar (30 kB at 159 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.2/maven-jar-plugin-2.3.2.pom
+    app: Progress (1): 779 BProgress (1): 2.3 kBProgress (1): 5.3 kBProgress (1): 5.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.2/maven-jar-plugin-2.3.2.pom (5.8 kB at 25 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/21/maven-plugins-21.pom
+    app: Progress (1): 748 BProgress (1): 2.3 kBProgress (1): 6.4 kBProgress (1): 8.6 kBProgress (1): 12 kB Progress (1): 12 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/21/maven-plugins-21.pom (12 kB at 64 kB/s)
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.2/maven-jar-plugin-2.3.2.jar
+    app: Progress (1): 3.2/33 kBProgress (1): 7.3/33 kBProgress (1): 11/33 kB Progress (1): 15/33 kBProgress (1): 20/33 kBProgress (1): 24/33 kBProgress (1): 28/33 kBProgress (1): 32/33 kBProgress (1): 33 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.2/maven-jar-plugin-2.3.2.jar (33 kB at 155 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/broadleafcommerce/broadleaf-framework/2.2.0-GA/broadleaf-framework-2.2.0-GA.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/broadleafcommerce/broadleaf-framework/2.2.0-GA/broadleaf-framework-2.2.0-GA.pom
+    app: Progress (1): 1.3 kBProgress (1): 5.0 kBProgress (1): 5.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/broadleafcommerce/broadleaf-framework/2.2.0-GA/broadleaf-framework-2.2.0-GA.pom (5.7 kB at 7.2 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/broadleafcommerce/core/2.2.0-GA/core-2.2.0-GA.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/broadleafcommerce/core/2.2.0-GA/core-2.2.0-GA.pom
+    app: Progress (1): 1.3 kBProgress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/broadleafcommerce/core/2.2.0-GA/core-2.2.0-GA.pom (2.2 kB at 2.5 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/broadleafcommerce/broadleaf/2.2.0-GA/broadleaf-2.2.0-GA.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/broadleafcommerce/broadleaf/2.2.0-GA/broadleaf-2.2.0-GA.pom
+    app: Progress (1): 1.1 kBProgress (1): 3.6 kBProgress (1): 7.7 kBProgress (1): 8.4 kBProgress (1): 12 kB Progress (1): 14 kBProgress (1): 16 kBProgress (1): 20 kBProgress (1): 22 kBProgress (1): 27 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 34 kBProgress (1): 38 kBProgress (1): 42 kBProgress (1): 46 kBProgress (1): 48 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/broadleafcommerce/broadleaf/2.2.0-GA/broadleaf-2.2.0-GA.pom (48 kB at 63 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+    app: Progress (1): 848 BProgress (1): 2.5 kBProgress (1): 4.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (4.8 kB at 25 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/apache/solr/solr-solrj/4.0.0/solr-solrj-4.0.0.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/solr/solr-solrj/4.0.0/solr-solrj-4.0.0.pom
+    app: Progress (1): 890 BProgress (1): 2.7 kBProgress (1): 4.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/solr/solr-solrj/4.0.0/solr-solrj-4.0.0.pom (4.9 kB at 6.3 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/apache/solr/solr-parent/4.0.0/solr-parent-4.0.0.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/solr/solr-parent/4.0.0/solr-parent-4.0.0.pom
+    app: Progress (1): 895 BProgress (1): 2.4 kBProgress (1): 4.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/solr/solr-parent/4.0.0/solr-parent-4.0.0.pom (4.3 kB at 5.0 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/apache/lucene/lucene-solr-grandparent/4.0.0/lucene-solr-grandparent-4.0.0.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/lucene/lucene-solr-grandparent/4.0.0/lucene-solr-grandparent-4.0.0.pom
+    app: Progress (1): 906 BProgress (1): 2.4 kBProgress (1): 3.2 kBProgress (1): 5.3 kBProgress (1): 9.4 kBProgress (1): 9.7 kBProgress (1): 14 kB Progress (1): 15 kBProgress (1): 18 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 25 kBProgress (1): 27 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/lucene/lucene-solr-grandparent/4.0.0/lucene-solr-grandparent-4.0.0.pom (27 kB at 42 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/apache/zookeeper/zookeeper/3.3.6/zookeeper-3.3.6.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/zookeeper/zookeeper/3.3.6/zookeeper-3.3.6.pom
+    app: Progress (1): 1.9 kBProgress (1): 2.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/zookeeper/zookeeper/3.3.6/zookeeper-3.3.6.pom (2.1 kB at 2.9 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/commons-io/commons-io/1.4/commons-io-1.4.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.pom
+    app: Progress (1): 786 BProgress (1): 2.2 kBProgress (1): 5.9 kBProgress (1): 7.9 kBProgress (1): 11 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.pom (13 kB at 46 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/apache/commons/commons-parent/7/commons-parent-7.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/7/commons-parent-7.pom
+    app: Progress (1): 754 BProgress (1): 2.1 kBProgress (1): 4.2 kBProgress (1): 8.3 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 17 kBProgress (1): 17 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/7/commons-parent-7.pom (17 kB at 51 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/apache/apache/4/apache-4.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom
+    app: Progress (1): 790 BProgress (1): 2.1 kBProgress (1): 4.2 kBProgress (1): 4.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom (4.5 kB at 16 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.pom
+    app: Progress (1): 865 BProgress (1): 2.9 kBProgress (1): 5.2 kBProgress (1): 6.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.pom (6.0 kB at 28 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/apache/httpcomponents/httpcomponents-client/4.1.3/httpcomponents-client-4.1.3.pom
+    app: Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.1.3/httpcomponents-client-4.1.3.pom
+    app: Progress (1): 847 BProgress (1): 2.3 kBProgress (1): 4.4 kBProgress (1): 7.7 kBProgress (1): 11 kB Progress (1): 12 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.1.3/httpcomponents-client-4.1.3.pom (12 kB at 27 kB/s)
+    app: Downloading from public releases: http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/org/apache/httpcomponents/project/5/project-5.pom

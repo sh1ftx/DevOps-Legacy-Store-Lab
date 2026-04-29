@@ -1,0 +1,32 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/bionic64"
+
+  config.vm.define :app do |app|
+    app.vm.network :private_network, ip: "192.168.56.10"
+
+    app.vm.provision "shell", inline: <<-SHELL
+      apt-get update -y
+      apt-get install -y openjdk-8-jdk maven mysql-server tomcat9 git curl
+
+      systemctl enable mysql
+      systemctl start mysql
+
+      mysql -u root <<SQL
+CREATE DATABASE IF NOT EXISTS loja_schema;
+CREATE USER IF NOT EXISTS 'vinicius'@'%' IDENTIFIED BY '12345';
+GRANT ALL PRIVILEGES ON loja_schema.* TO 'vinicius'@'%';
+FLUSH PRIVILEGES;
+SQL
+
+      cd /home/vagrant
+      git clone https://github.com/dtsato/loja-virtual-devops.git
+      cd loja-virtual-devops
+
+      mvn clean install -DskipTests
+
+      cp target/*.war /var/lib/tomcat9/webapps/ROOT.war
+
+      systemctl restart tomcat9
+    SHELL
+  end
+end
